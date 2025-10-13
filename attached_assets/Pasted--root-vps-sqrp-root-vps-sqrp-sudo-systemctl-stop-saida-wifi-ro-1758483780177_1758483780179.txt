@@ -1,0 +1,435 @@
+
+[root@vps-sqrp ~]# # إيقاف الخدمة المتحطمة
+[root@vps-sqrp ~]# sudo systemctl stop saida-wifi
+[root@vps-sqrp ~]#
+[root@vps-sqrp ~]# # الانتقال لمجلد التطبيق
+[root@vps-sqrp ~]# cd /var/www/html/saida/
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # تشغيل التطبيق في وضع development لرؤية الخطأ كاملاً
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npm run dev
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from "vite";
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npm run dev
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from "vite";
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# [root@vps-sqrp ~]# # إيقاف الخدمة المتحطمة
+[root@vps-sqrp ~]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp ~]# sudo systemctl stop saida-wifi
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp ~]# # الانتقال لمجلد التطبيق
+[root@vps-sqrp ~]# cd /var/www/html/saida/
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # تشغيل التطبيق في وضع development لرؤية الخطأ كاملاً
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npm run dev
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from "vite";
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+[root@vps-sqrp saida]# [root@vps-sqrp ~]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp ~]# # الانتقال لمجلد التطبيق
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npm run dev
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from "vite";
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_jo-bash: [root@vps-sqrp: command not found
+b:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]# [root@vps-sqrp ~]# cd /var/www/html/saida/
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]# # تشغيل التطبيق في وضع development لرؤية الخطأ كاملاً
+[root@vps-sqrp saida]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npm run dev
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# > rest-express@1.0.0 dev
+-bash: dev: command not found
+[root@vps-sqrp saida]# > NODE_ENV=development tsx server/index.ts
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from "vite";
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# /var/www/html/saida/vite.config.ts:1
+-bash: /var/www/html/saida/vite.config.ts:1: No such file or directory
+[root@vps-sqrp saida]# import { defineConfig } from "vite";
+-bash: import: command not found
+[root@vps-sqrp saida]#          ^
+-bash: ^: command not found
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+-bash: SyntaxError:: command not found
+[root@vps-sqrp saida]#     at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async loadESM (node:internal/process/esm_loader:34:7)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async handleMainPromise (node:internal/modules/run_main:106:12)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# Node.js v18.19.1
+-bash: Node.js: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npm run dev
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# > rest-express@1.0.0 dev
+-bash: dev: command not found
+[root@vps-sqrp saida]# > NODE_ENV=development tsx server/index.ts
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from "vite";
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# /var/www/html/saida/vite.config.ts:1
+-bash: /var/www/html/saida/vite.config.ts:1: No such file or directory
+[root@vps-sqrp saida]# import { defineConfig } from "vite";
+-bash: import: command not found
+[root@vps-sqrp saida]#          ^
+-bash: ^: command not found
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+-bash: SyntaxError:: command not found
+[root@vps-sqrp saida]#     at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async loadESM (node:internal/process/esm_loader:34:7)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#     at async handleMainPromise (node:internal/modules/run_main:106:12)
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# Node.js v18.19.1
+-bash: Node.js: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# # تنظيف Vite cache
+[root@vps-sqrp saida]# rm -rf node_modules/.vite
+[root@vps-sqrp saida]# rm -rf node_modules/.cache
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # حذف node_modules وإعادة التثبيت
+[root@vps-sqrp saida]# rm -rf node_modules
+[root@vps-sqrp saida]# rm -f package-lock.json
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # إعادة تثبيت التبعيات مع dev dependencies
+[root@vps-sqrp saida]# npm install
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@capacitor/cli@7.4.3',
+npm WARN EBADENGINE   required: { node: '>=20.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'rimraf@6.0.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'glob@11.0.3',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'jackspeak@4.1.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'minimatch@10.0.3',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'path-scurry@2.0.0',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@isaacs/brace-expansion@5.0.0',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@isaacs/balanced-match@4.0.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'lru-cache@11.2.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm WARN deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+npm WARN deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 604 packages, and audited 605 packages in 48s
+
+87 packages are looking for funding
+  run `npm fund` for details
+
+5 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[root@vps-sqrp saida]# # فحص محتوى vite.config.ts
+[root@vps-sqrp saida]# cat vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+
+export default defineConfig({
+  plugins: [
+    react(),
+    runtimeErrorOverlay(),
+    ...(process.env.NODE_ENV !== "production" &&
+    process.env.REPL_ID !== undefined
+      ? [
+          await import("@replit/vite-plugin-cartographer").then((m) =>
+            m.cartographer(),
+          ),
+        ]
+      : []),
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "client", "src"),
+      "@shared": path.resolve(import.meta.dirname, "shared"),
+      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+    },
+  },
+  root: path.resolve(import.meta.dirname, "client"),
+  build: {
+    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    emptyOutDir: true,
+  },
+  server: {
+    fs: {
+      strict: true,
+      deny: ["**/.*"],
+    },
+  },
+});
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # إذا كان فارغ أو به خطأ، أنشئ نسخة جديدة
+[root@vps-sqrp saida]# cp vite.config.ts vite.config.ts.backup
+[root@vps-sqrp saida]# cat > vite.config.ts << 'EOF'
+> import { defineConfig } from 'vite'
+>
+> export default defineConfig({
+>   server: {
+>     port: 5000,
+>     host: '0.0.0.0'
+>   },
+>   build: {
+>     outDir: 'client/dist'
+>   }
+> })
+> EOF
+[root@vps-sqrp saida]# # تشغيل server فقط بدون Vite
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npx tsx server/index.ts
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from 'vite'
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]# sudo nano /etc/systemd/system/saida-wifi.service
+[root@vps-sqrp saida]# # إعادة تحميل systemd
+[root@vps-sqrp saida]# sudo systemctl daemon-reload
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # تشغيل الخدمة
+[root@vps-sqrp saida]# sudo systemctl start saida-wifi
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # فحص الحالة
+[root@vps-sqrp saida]# sudo systemctl status saida-wifi
+● saida-wifi.service - SAIDA WiFi Manager
+   Loaded: loaded (/etc/systemd/system/saida-wifi.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2025-09-21 15:41:01 EDT; 66ms ago
+ Main PID: 11787 (node)
+    Tasks: 7
+   Memory: 9.6M
+   CGroup: /system.slice/saida-wifi.service
+           └─11787 node /usr/local/bin/npx tsx server/index.ts
+
+Sep 21 15:41:01 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # اختبار
+[root@vps-sqrp saida]# curl -I http://localhost:3000
+curl: (7) Failed connect to localhost:3000; Connection refused
+[root@vps-sqrp saida]# rm -rf node_modules/.vite
+[root@vps-sqrp saida]# rm -rf node_modules
+[root@vps-sqrp saida]# npm install
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@capacitor/cli@7.4.3',
+npm WARN EBADENGINE   required: { node: '>=20.0.0' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@isaacs/balanced-match@4.0.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@isaacs/brace-expansion@5.0.0',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'glob@11.0.3',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'jackspeak@4.1.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'minimatch@10.0.3',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'path-scurry@2.0.0',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'lru-cache@11.2.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'rimraf@6.0.1',
+npm WARN EBADENGINE   required: { node: '20 || >=22' },
+npm WARN EBADENGINE   current: { node: 'v18.19.1', npm: '10.2.4' }
+npm WARN EBADENGINE }
+npm WARN deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm WARN deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+npm WARN deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 604 packages, and audited 605 packages in 14s
+
+87 packages are looking for funding
+  run `npm fund` for details
+
+5 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npx tsx server/index.ts
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from 'vite'
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]# NODE_ENV=development JWT_SECRET=test_secret npx tsx server/index.ts
+/var/www/html/saida/vite.config.ts:1
+import { defineConfig } from 'vite'
+         ^
+
+SyntaxError: The requested module 'vite' does not provide an export named 'defineConfig'
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:123:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:191:5)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:336:24)
+    at async loadESM (node:internal/process/esm_loader:34:7)
+    at async handleMainPromise (node:internal/modules/run_main:106:12)
+
+Node.js v18.19.1
+[root@vps-sqrp saida]#

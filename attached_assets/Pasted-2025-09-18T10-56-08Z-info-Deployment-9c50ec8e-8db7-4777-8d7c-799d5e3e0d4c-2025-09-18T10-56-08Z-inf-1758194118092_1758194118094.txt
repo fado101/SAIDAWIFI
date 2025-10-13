@@ -1,0 +1,57 @@
+2025-09-18T10:56:08Z info: Deployment: 9c50ec8e-8db7-4777-8d7c-799d5e3e0d4c
+2025-09-18T10:56:08Z info: Build: 5f534d58-9e32-4406-b6d7-93a8aa37523e
+2025-09-18T10:56:08Z info: Connecting to builder
+2025-09-18T10:56:11Z info: Builder connected
+2025-09-18T10:56:13Z info: Installing packages
+2025-09-18T10:56:14Z info: Starting Build
+
+> rest-express@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+
+vite v5.4.19 building for production...
+
+transforming...
+
+✓ 1741 modules transformed.
+
+rendering chunks...
+
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) /home/runner/workspace/node_modules/@capacitor/preferences/dist/esm/index.js is dynamically imported by /home/runner/workspace/client/src/pages/hierarchical-usage.tsx, /home/runner/workspace/client/src/services/jwtAuth.ts, /home/runner/workspace/client/src/services/jwtAuth.ts, /home/runner/workspace/client/src/services/jwtAuth.ts, /home/runner/workspace/client/src/services/mobileSession.ts but also statically imported by /home/runner/workspace/client/src/services/authClearingService.ts, /home/runner/workspace/client/src/services/authService.ts, dynamic import will not move module into another chunk.
+
+
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) /home/runner/workspace/client/src/services/directApiService.ts is dynamically imported by /home/runner/workspace/client/src/services/authService.ts but also statically imported by /home/runner/workspace/client/src/hooks/useAuth.ts, /home/runner/workspace/client/src/lib/queryClient.ts, dynamic import will not move module into another chunk.
+
+
+computing gzip size...
+
+../dist/public/index.html                   1.19 kB │ gzip:   0.58 kB
+../dist/public/assets/index-BdSZWlB2.css   69.64 kB │ gzip:  12.05 kB
+../dist/public/assets/web-f3FAIhWv.js       0.12 kB │ gzip:   0.12 kB
+../dist/public/assets/index-BP_Ya2tp.js     0.35 kB │ gzip:   0.24 kB
+../dist/public/assets/web-D-bWs8qD.js       1.25 kB │ gzip:   0.59 kB
+../dist/public/assets/index-BCWfESGV.js   431.55 kB │ gzip: 130.37 kB
+✓ built in 12.36s
+
+
+  dist/index.js  95.0kb
+
+⚡ Done in 35ms
+
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.6.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.0
+npm notice To update run: npm install -g npm@11.6.0
+npm notice
+
+2025-09-18T10:56:39Z info: Pushing pid1 binary layer...
+2025-09-18T10:56:47Z info: Pushing hosting layer...
+2025-09-18T10:56:47Z info: Pushing Repl layer...
+2025-09-18T10:56:47Z info: Retrieved cached nix layer
+2025-09-18T10:56:47Z info: Pushing nix-0 layer...
+2025-09-18T10:56:47Z info: Created pid1 binary layer
+2025-09-18T10:56:48Z info: Created hosting layer
+2025-09-18T10:59:06Z info: Created Repl layer
+Deployment timed out. Check the Logs tab for more details. - 2025-09-18T11:05:08.016Z

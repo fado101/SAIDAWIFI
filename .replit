@@ -1,0 +1,32 @@
+modules = ["nodejs-20", "web", "flutter"]
+run = "npm start"
+hidden = [".config", ".git", "node_modules", "dist"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["psmisc", "lsof", "unzip", "flutter316"]
+
+[deployment]
+deploymentTarget = "cloudrun"
+build = ["npm", "run", "build"]
+run = ["npm", "start"]
+
+[[ports]]
+localPort = 80
+externalPort = 80
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+
+[workflows]
+runButton = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm start"
+waitForPort = 80

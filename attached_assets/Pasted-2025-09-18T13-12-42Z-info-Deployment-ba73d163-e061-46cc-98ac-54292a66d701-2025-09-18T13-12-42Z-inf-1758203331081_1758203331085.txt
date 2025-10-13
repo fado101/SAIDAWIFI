@@ -1,0 +1,71 @@
+2025-09-18T13:12:42Z info: Deployment: ba73d163-e061-46cc-98ac-54292a66d701
+2025-09-18T13:12:42Z info: Build: 6feb2db5-b86d-4a75-bb8c-a289e959f6ba
+2025-09-18T13:12:42Z info: Connecting to builder
+2025-09-18T13:12:42Z info: Deployment: ba73d163-e061-46cc-98ac-54292a66d701
+2025-09-18T13:12:42Z info: Build: 6feb2db5-b86d-4a75-bb8c-a289e959f6ba
+2025-09-18T13:12:42Z info: Connecting to builder
+2025-09-18T13:12:45Z info: Builder connected
+2025-09-18T13:12:47Z info: Installing packages
+2025-09-18T13:12:48Z info: Starting Build
+
+> rest-express@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+
+vite v5.4.19 building for production...
+
+transforming...
+
+✓ 1741 modules transformed.
+
+rendering chunks...
+
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) /home/runner/workspace/node_modules/@capacitor/preferences/dist/esm/index.js is dynamically imported by /home/runner/workspace/client/src/pages/hierarchical-usage.tsx, /home/runner/workspace/client/src/services/jwtAuth.ts, /home/runner/workspace/client/src/services/jwtAuth.ts, /home/runner/workspace/client/src/services/jwtAuth.ts, /home/runner/workspace/client/src/services/mobileSession.ts but also statically imported by /home/runner/workspace/client/src/services/authClearingService.ts, /home/runner/workspace/client/src/services/authService.ts, dynamic import will not move module into another chunk.
+
+
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) /home/runner/workspace/client/src/services/authService.ts is dynamically imported by /home/runner/workspace/client/src/pages/dashboard.tsx but also statically imported by /home/runner/workspace/client/src/hooks/useAuth.ts, /home/runner/workspace/client/src/lib/queryClient.ts, /home/runner/workspace/client/src/pages/debug.tsx, /home/runner/workspace/client/src/pages/login.tsx, /home/runner/workspace/client/src/services/authFixService.ts, /home/runner/workspace/client/src/services/directApiService.ts, dynamic import will not move module into another chunk.
+
+
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) /home/runner/workspace/client/src/services/directApiService.ts is dynamically imported by /home/runner/workspace/client/src/services/authService.ts but also statically imported by /home/runner/workspace/client/src/hooks/useAuth.ts, /home/runner/workspace/client/src/lib/queryClient.ts, dynamic import will not move module into another chunk.
+
+
+computing gzip size...
+
+../dist/public/index.html                   1.19 kB │ gzip:   0.58 kB
+
+../dist/public/assets/index-BdSZWlB2.css   69.64 kB │ gzip:  12.05 kB
+
+../dist/public/assets/web-f3FAIhWv.js       0.12 kB │ gzip:   0.12 kB
+
+../dist/public/assets/index-BP_Ya2tp.js     0.35 kB │ gzip:   0.24 kB
+
+../dist/public/assets/web-D-bWs8qD.js       1.25 kB │ gzip:   0.59 kB
+
+../dist/public/assets/index-BCWfESGV.js   431.55 kB │ gzip: 130.37 kB
+
+✓ built in 6.25s
+
+
+  dist/index.js  95.4kb
+
+⚡ Done in 22ms
+
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.6.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.0
+npm notice To update run: npm install -g npm@11.6.0
+npm notice
+
+2025-09-18T13:13:03Z info: Pushing pid1 binary layer...
+2025-09-18T13:13:09Z info: Pushing Repl layer...
+2025-09-18T13:13:09Z info: Pushing hosting layer...
+2025-09-18T13:13:09Z info: Nix layers for this Repl are uncached.
+2025-09-18T13:13:09Z info: Pushing nix-0 layer...
+2025-09-18T13:13:09Z info: Retrieved cached nix layer
+2025-09-18T13:13:10Z info: Created hosting layer
+2025-09-18T13:13:12Z info: Created pid1 binary layer
+2025-09-18T13:15:21Z info: Created Repl layer
+Deployment timed out. Check the Logs tab for more details. - 2025-09-18T13:21:42.948Z

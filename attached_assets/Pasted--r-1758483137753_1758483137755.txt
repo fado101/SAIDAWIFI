@@ -1,0 +1,46 @@
+                                                                                                   rnal/modules/esm/loader:336:24)
+Sep 21 15:31:25 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited                                                                                                             , code=exited, status=1/FAILURE
+Sep 21 15:31:25 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed                                                                                                              state.
+Sep 21 15:31:25 vps-sqrp.com systemd[1]: saida-wifi.service failed.
+Sep 21 15:31:30 vps-sqrp.com systemd[1]: saida-wifi.service holdoff time over, s                                                                                                             cheduling restart.
+Sep 21 15:31:30 vps-sqrp.com systemd[1]: Stopped SAIDA WiFi Manager.
+Sep 21 15:31:30 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+Sep 21 15:31:31 vps-sqrp.com node[3286]: file:///var/www/html/saida/dist/index.j                                                                                                             s:20
+Sep 21 15:31:31 vps-sqrp.com node[3286]: throw new Error("JWT_SECRET environment                                                                                                              variable is required in production");
+Sep 21 15:31:31 vps-sqrp.com node[3286]: ^
+Sep 21 15:31:31 vps-sqrp.com node[3286]: Error: JWT_SECRET environment variable                                                                                                              is required in production
+Sep 21 15:31:31 vps-sqrp.com node[3286]: at file:///var/www/html/saida/dist/inde                                                                                                             x.js:20:9
+Sep 21 15:31:31 vps-sqrp.com node[3286]: at file:///var/www/html/saida/dist/inde                                                                                                             x.js:21:3
+Sep 21 15:31:31 vps-sqrp.com node[3286]: at ModuleJob.run (node:internal/modules                                                                                                             /esm/module_job:195:25)
+Sep 21 15:31:31 vps-sqrp.com node[3286]: at async ModuleLoader.import (node:inte                                                                                                             rnal/modules/esm/loader:336:24)
+Sep 21 15:31:31 vps-sqrp.com node[3286]: at async loadESM (node:internal/process                                                                                                             /esm_loader:34:7)
+Sep 21 15:31Sep 21 15:31:54 vps-sqrp.com node[3578]: file:///var/www/html/saida/                                                                                                             dist/index.js:20
+Sep 21 15:31:54 vps-sqrp.com node[3578]: throw new Error("JWT_SECRET environment                                                                                                              variable is required in production");
+Sep 21 15:31:54 vps-sqrp.com node[3578]: ^
+Sep 21 15:31:54 vps-sqrp.com node[3578]: Error: JWT_SECRET environment variable                                                                                                              is required in production
+Sep 21 15:31:54 vps-sqrp.com node[3578]: at file:///var/www/html/saida/dist/inde                                                                                                             x.js:20:9
+Sep 21 15:31:54 vps-sqrp.com node[3578]: at file:///var/www/html/saida/dist/inde                                                                                                             x.js:21:3
+Sep 21 15:31:54 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited                                                                                                             , code=exited, status=1/FAILURE
+Sep 21 15:31:54 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed                                                                                                              state.
+Sep 21 15:31:54 vps-sqrp.com systemd[1]: saida-wifi.service failed.
+Sep 21 15:31:59 vps-sqrp.com systemd[1]: saida-wifi.service holdoff time over, s                                                                                                             cheduling restart.
+Sep 21 15:31:59 vps-sqrp.com systemd[1]: Stopped SAIDA WiFi Manager.
+Sep 21 15:31:59 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+Sep 21 15:32:00 vps-sqrp.com node[3662]: file:///var/www/html/saida/dist/index.j                                                                                                             s:20
+Sep 21 15:32:00 vps-sqrp.com node[3662]: throw new Error("JWT_SECRET environment                                                                                                              variable is required in production");
+Sep 21 15:32:00 vps-sqrp.com node[3662]: ^
+Sep 21 15:32:00 vps-sqrp.com node[3662]: Error: JWT_SECRET environment variable                                                                                                              is required in production
+Sep 21 15:32:00 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited                                                                                                             , code=exited, status=1/FAILURE
+Sep 21 15:32:00 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed                                                                                                              state.
+Sep 21 15:32:00 vps-sqrp.com systemd[1]: saida-wifi.service failed.
+Sep 21 15:32:05 vps-sqrp.com systemd[1]: saida-wifi.service holdoff time over, scheduling restart.
+Sep 21 15:32:05 vps-sqrp.com systemd[1]: Stopped SAIDA WiFi Manager.
+Sep 21 15:32:05 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+Sep 21 15:32:06 vps-sqrp.com node[3765]: file:///var/www/html/saida/dist/index.js:20
+Sep 21 15:32:06 vps-sqrp.com node[3765]: throw new Error("JWT_SECRET environment variable is required in production");
+Sep 21 15:32:06 vps-sqrp.com node[3765]: ^
+Sep 21 15:32:06 vps-sqrp.com node[3765]: Error: JWT_SECRET environment variable is required in production
+Sep 21 15:32:06 vps-sqrp.com node[3765]: at file:///var/www/html/saida/dist/index.js:20:9
+Sep 21 15:32:06 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited, code=exited, status=1/FAILURE
+Sep 21 15:32:06 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed state.
+

@@ -1,0 +1,54 @@
+# Exclude Flutter/Android/Mobile projects
+android/
+ios/
+windows/
+macos/
+flutter_project/
+saida_wifi_flutter/
+saida_wifi_manager/
+fahad-saida/
+flutter_*/
+saida_*/
+
+# Exclude build directories
+*/build/
+*/.gradle/
+tmp/
+production-build/
+saidawifi-server-*/
+build/
+
+# Exclude large binary files
+*.apk
+*.aab
+*.ipa
+*.tar
+*.tar.gz
+*.zip
+
+# Exclude Flutter web build artifacts (keep only essential)
+flutter_web/build/
+
+# Exclude attached assets
+attached_assets/
+
+# Exclude temporary files
+*.log
+*.tmp
+.cache/
+.config/
+/tmp/
+
+# Exclude debug files and logs
+attached_assets/
+server-production.js
+index-*-fixed*.js
+index-*-original.js
+fix-*.js
+emergency-*.html
+
+# Exclude development artifacts
+*.orig
+*.bak
+.vscode/
+.DS_Store

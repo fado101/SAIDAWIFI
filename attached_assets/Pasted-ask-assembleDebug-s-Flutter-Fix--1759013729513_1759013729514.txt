@@ -1,0 +1,85 @@
+ask 'assembleDebug'...                            ١٢٢٫٥s
+
+┌─ Flutter Fix ────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [!] Your project's Gradle version is incompatible with the Java version that Flutter is using for Gradle.            │
+│                                                                                                                      │
+│ To fix this issue, first, check the Java version used by Flutter by running `flutter doctor --verbose`.              │
+│                                                                                                                      │
+│ Then, update the Gradle version specified in                                                                         │
+│ C:\Users\2\Documents\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.properties to be compatible with that Java │
+│ version. See the link below for more information on compatible Java/Gradle versions:                                 │
+│ https://docs.gradle.org/current/userguide/compatibility.html#java                                                    │
+│                                                                                                                      │
+│                                                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "android\build" -ecurse -orce -rrorction ilentlyontinue
+emove-tem : The term 'emove-tem' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ emove-tem -ath "android\build" -ecurse -orce -rrorction ilentlyontinu ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (emove-tem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "android\app\build" -ecurse -orce -rrorction ilentlyontinue
+emove-tem : The term 'emove-tem' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ emove-tem -ath "android\app\build" -ecurse -orce -rrorction ilentlyon ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (emove-tem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\2\Documents\saida_wifi_app> # 1. ???? ndroid build ??????
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "android\build" -ecurse -orce -rrorction ilentlyontinue
+emove-tem : The term 'emove-tem' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ emove-tem -ath "android\build" -ecurse -orce -rrorction ilentlyontinu ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (emove-tem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "android\app\build" -ecurse -orce -rrorction ilentlyontinue
+emove-tem : The term 'emove-tem' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ emove-tem -ath "android\app\build" -ecurse -orce -rrorction ilentlyon ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (emove-tem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 2. ???? lutter cache
+PS C:\Users\2\Documents\saida_wifi_app> flutter clean
+Deleting build...                                                    ٦ms
+Deleting .dart_tool...                                               ١ms
+Deleting .flutter-plugins-dependencies...                            ١ms
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 3. ??? ????? ????????
+PS C:\Users\2\Documents\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 4. ??? ???????
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+package identifier or launch activity not found.
+Please check C:\Users\2\Documents\saida_wifi_app\android\app\src\main\AndroidManifest.xml for errors.
+No application found for TargetPlatform.android_arm64.
+Is your project missing an android\app\src\main\AndroidManifest.xml?
+Consider running "flutter create ." to create one.
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app>

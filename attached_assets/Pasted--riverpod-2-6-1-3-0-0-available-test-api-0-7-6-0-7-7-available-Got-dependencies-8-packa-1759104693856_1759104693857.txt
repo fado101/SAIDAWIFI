@@ -1,0 +1,195 @@
+
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Launching lib\main.dart on SM G988B in debug mode...
+Upgrading build.gradle
+ERROR: [mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.png [mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.png [mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> [mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.png
+[mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.png
+[mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png       [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png     [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png   [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.xml: Error: Duplicate resources
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 7s
+Running Gradle task 'assembleDebug'...                              ٨٫٢s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app> flutter clean
+Deleting build...                                                   ٣٣ms
+Deleting .dart_tool...                                               ٨ms
+Deleting .flutter-plugins-dependencies...                            ١ms
+PS C:\Users\2\Documents\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Launching lib\main.dart on SM G988B in debug mode...
+ERROR: [mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.png [mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.png [mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+ERROR: [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.xml: Resource and asset merger: Duplicate resources
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> [mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.png
+[mipmap-hdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.png
+[mipmap-mdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png       [mipmap-xhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png     [mipmap-xxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.xml: Error: Duplicate resources
+  [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png   [mipmap-xxxhdpi-v4/ic_launcher] C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.xml: Error: Duplicate resources
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 14s
+Running Gradle task 'assembleDebug'...                             ١٥٫٢s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app> Remove-Item "C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-*" -Recurse -Force
+PS C:\Users\2\Documents\saida_wifi_app> flutter clean
+Deleting build...                                                   ٣٢ms
+Deleting .dart_tool...                                               ٩ms
+Deleting .flutter-plugins-dependencies...                            ١ms
+PS C:\Users\2\Documents\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Launching lib\main.dart on SM G988B in debug mode...
+e: Failed connecting to the daemon in 4 retries
+e: Daemon compilation failed: Could not connect to Kotlin compile daemon
+java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:214)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:159)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:111)
+        at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:76)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+   > Android resource linking failed
+     ERROR: C:\Users\2\Documents\saida_wifi_app\build\app\intermediates\packaged_manifests\debug\processDebugManifestForPackage\AndroidManifest.xml:33: AAPT: error: resource mipmap/ic_launcher (aka com.saidawifi.app:mipmap/ic_launcher) not found.
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 37s
+Running Gradle task 'assembleDebug'...                             ٩٧٫٩s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app>
+
+
+

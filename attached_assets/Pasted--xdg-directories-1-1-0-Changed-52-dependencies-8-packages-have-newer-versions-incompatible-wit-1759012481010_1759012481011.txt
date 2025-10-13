@@ -1,0 +1,40 @@
+
++ xdg_directories 1.1.0
+Changed 52 dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+Upgrading build.gradle
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not open cp_settings generic class cache for settings file 'C:\Users\2\Documents\saida_wifi_app\android\settings.gradle' (C:\Users\2\.gradle\caches\7.6.3\scripts\4o3bwgk78pzmozextzr0d16g5).
+> BUG! exception in phase 'semantic analysis' in source unit '_BuildScript_' Unsupported class file major version 65
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3m 1s
+Running Gradle task 'assembleDebug'...                            ١٨٢٫٥s
+
+┌─ Flutter Fix ────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [!] Your project's Gradle version is incompatible with the Java version that Flutter is using for Gradle.            │
+│                                                                                                                      │
+│ To fix this issue, first, check the Java version used by Flutter by running `flutter doctor --verbose`.              │
+│                                                                                                                      │
+│ Then, update the Gradle version specified in                                                                         │
+│ C:\Users\2\Documents\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.properties to be compatible with that Java │
+│ version. See the link below for more information on compatible Java/Gradle versions:                                 │
+│ https://docs.gradle.org/current/userguide/compatibility.html#java                                                    │
+│                                                                                                                      │
+│                                                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app>
+

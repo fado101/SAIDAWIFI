@@ -1,0 +1,94 @@
+~/workspace$ cd saida_wifi_app
+~/workspace/saida_wifi_app$ flutter analyze
+flutter: command not installed. Multiple versions of this command were found in Nix.
+Select one to run (or press Ctrl-C to cancel):
+~/workspace/saida_wifi_app$ flutter run
+flutter: command not installed. Multiple versions of this command were found in Nix.
+Select one to run (or press Ctrl-C to cancel):
+flutter316  3.16.7  Flutter is Google's SDK for building mobile, web and desktop with Dart
+Adding flutter316 to .replit
+
+  ╔═══════════════════════════════════════════════════════════════════
+  ═════════╗
+  ║                 Welcome to Flutter! - https://flutter.dev
+  ║
+  ║
+  ║
+  ║ The Flutter tool uses Google Analytics to anonymously report
+  feature usage ║
+  ║ statistics and basic crash reports. This data is used to help
+  improve      ║
+  ║ Flutter tools over time.
+  ║
+  ║
+  ║
+  ║ Flutter tool analytics are not sent on the very first run. To
+  disable      ║
+  ║ reporting, type 'flutter config --no-analytics'. To display the
+  current    ║
+  ║ setting, type 'flutter config'. If you opt out of analytics, an
+  opt-out    ║
+  ║ event will be sent, and then no further information will be sent
+  by the    ║
+  ║ Flutter tool.
+  ║
+  ║
+  ║
+  ║ By downloading the Flutter SDK, you agree to the Google Terms of
+  Service.  ║
+  ║ The Google Privacy Policy describes how data is handled in this
+  service.   ║
+  ║
+  ║
+  ║ Moreover, Flutter includes the Dart SDK, which may send usage
+  metrics and  ║
+  ║ crash reports to Google.
+  ║
+  ║
+  ║
+  ║ Read about data we send with crash reports:
+  ║
+  ║ https://flutter.dev/docs/reference/crash-reporting
+  ║
+  ║
+  ║
+  ║ See Google's privacy policy:
+  ║
+  ║ https://policies.google.com/privacy
+  ║
+  ║
+  ║
+  ║ To disable animations in this tool, use 'flutter config
+  --no-animations'.  ║
+  ╚═══════════════════════════════════════════════════════════════════
+  ═════════╝
+
+
+No supported devices connected.
+
+The following devices were found, but are not supported by this
+project:
+Linux (desktop) • linux • linux-x64 • Ubuntu 24.04.2 LTS 6.2.16
+If you would like your app to run on linux, consider running `flutter
+create .` to generate projects for these platforms.
+The Flutter CLI developer tool uses Google Analytics to report usage
+and diagnostic
+data along with package dependencies, and crash reporting to send
+basic crash
+reports. This data is used to help improve the Dart platform, Flutter
+framework,
+and related tools.
+
+Telemetry is not sent on the very first run. To disable reporting of
+telemetry,
+run this terminal command:
+
+    flutter --disable-analytics
+
+If you opt out of telemetry, an opt-out event will be sent, and then
+no further
+information will be sent. This data is collected in accordance with
+the Google
+Privacy Policy (https://policies.google.com/privacy).
+
+~/workspace/saida_wifi_app$ 

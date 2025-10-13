@@ -1,0 +1,515 @@
+a:199)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:114)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+exception: warning: ATTENTION!
+exception: this build uses unsafe internal compiler arguments:
+exception:
+exception:
+exception: this mode is not recommended for production use,
+exception: as no stability/compatibility guarantees are given on
+exception: compiler or generated code. Use it at your own risk!
+exception:
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:764:21: error: unresolved reference: filePermissions
+exception:                     filePermissions {
+exception:                     ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:765:25: error: unresolved reference: user
+exception:                         user {
+exception:                         ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:766:29: error: unresolved reference: read
+exception:                             read = true
+exception:                             ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:767:29: error: unresolved reference: write
+exception:                             write = true
+exception:                             ^
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':gradle:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 22s
+Running Gradle task 'assembleDebug'...                             ٢٣٫٢s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app> # 1. ??? Gradle cache ?????
+PS C:\Users\2\Documents\saida_wifi_app> Remove-Item -Path "$env:USERPROFILE\.gradle" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item : The system cannot find the file specified
+At line:1 char:1
++ Remove-Item -Path "$env:USERPROFILE\.gradle" -Recurse -Force -ErrorAc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Remove-Item], Win32Exception
+    + FullyQualifiedErrorId : System.ComponentModel.Win32Exception,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 2. ??? Flutter cache
+PS C:\Users\2\Documents\saida_wifi_app> flutter clean
+Deleting build...                                                    ٣ms
+Deleting .dart_tool...                                               ١ms
+Deleting .flutter-plugins-dependencies...                            ١ms
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 3. ??? Android build cache
+PS C:\Users\2\Documents\saida_wifi_app> Remove-Item -Path "android\build" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\2\Documents\saida_wifi_app> Remove-Item -Path "android\app\build" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 4. ??? .dart_tool cache
+PS C:\Users\2\Documents\saida_wifi_app> Remove-Item -Path ".dart_tool" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 1. ????? dependencies
+PS C:\Users\2\Documents\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 2. ????? flutter ??? ???? ??????
+PS C:\Users\2\Documents\saida_wifi_app> flutter clean
+Deleting .dart_tool...                                               ٤ms
+Deleting .flutter-plugins-dependencies...                            ١ms
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 3. ????? ????? dependencies
+PS C:\Users\2\Documents\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app> flutter run --verbose
+[ +126 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[ +109 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[   +3 ms] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +4 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[   +5 ms] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +61 ms] executing: C:\Users\2\AppData\Local\Android\sdk\platform-tools\adb.exe devices -l
+[  +73 ms] List of devices attached
+           R5CN400LCFT            device product:z3sxeea model:SM_G988B device:z3s transport_id:2
+[   +8 ms] C:\Users\2\AppData\Local\Android\sdk\platform-tools\adb.exe -s R5CN400LCFT shell getprop
+[ +144 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[   +7 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[ +119 ms] Skipping pub get: version match.
+[  +83 ms] Found plugin shared_preferences at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences-2.5.3\
+[   +7 ms] Found plugin shared_preferences_windows at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_windows-2.4.1\
+[   +8 ms] Found plugin path_provider_windows at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[  +12 ms] Found plugin shared_preferences_web at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_web-2.4.3\
+[   +5 ms] Found plugin shared_preferences_linux at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_linux-2.4.1\
+[   +5 ms] Found plugin path_provider_linux at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +6 ms] Found plugin shared_preferences_foundation at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_foundation-2.5.4\
+[   +4 ms] Found plugin shared_preferences_android at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.13\
+[  +81 ms] Found plugin shared_preferences at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences-2.5.3\
+[   +3 ms] Found plugin shared_preferences_windows at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_windows-2.4.1\
+[   +6 ms] Found plugin path_provider_windows at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[   +7 ms] Found plugin shared_preferences_web at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_web-2.4.3\
+[   +4 ms] Found plugin shared_preferences_linux at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_linux-2.4.1\
+[   +2 ms] Found plugin path_provider_linux at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +4 ms] Found plugin shared_preferences_foundation at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_foundation-2.5.4\
+[   +5 ms] Found plugin shared_preferences_android at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.13\
+[  +14 ms] Generating
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+[  +13 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[   +2 ms] ro.hardware = exynos990
+[   +1 ms] ro.build.characteristics = phone
+[ +110 ms] Initializing file store
+[  +13 ms] Skipping target: gen_localizations
+[   +5 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have
+updated contents: C:\Users\2\Documents\saida_wifi_app\.dart_tool\package_config.json}
+[  +52 ms] Found plugin shared_preferences at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences-2.5.3\
+[   +5 ms] Found plugin shared_preferences_windows at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_windows-2.4.1\
+[  +17 ms] Found plugin path_provider_windows at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_windows-2.3.0\
+[  +15 ms] Found plugin shared_preferences_web at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_web-2.4.3\
+[  +12 ms] Found plugin shared_preferences_linux at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_linux-2.4.1\
+[   +3 ms] Found plugin path_provider_linux at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_linux-2.2.1\
+[   +4 ms] Found plugin shared_preferences_foundation at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_foundation-2.5.4\
+[   +3 ms] Found plugin shared_preferences_android at
+C:\Users\2\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.13\
+[  +45 ms] gen_dart_plugin_registrant: Complete
+[   +7 ms] _composite: Starting due to {}
+[   +1 ms] _composite: Complete
+[   +4 ms] complete
+[   +5 ms] Launching lib\main.dart on SM G988B in debug mode...
+[   +6 ms] C:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\bin\cache\dart-sdk\bin\dartaotruntime.exe
+C:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.sna
+pshot --sdk-root
+C:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\bin\cache\artifacts\engine\common\flutter_patched_sdk/
+--incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.35.3 -DFLUTTER_CHANNEL=stable
+-DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=a402d9a437
+-DFLUTTER_ENGINE_REVISION=ddf47dd3ff -DFLUTTER_DART_VERSION=3.9.2 --output-dill
+C:\Users\2\AppData\Local\Temp\flutter_tools.e28deb3b\flutter_tool.405f31b2\app.dill --packages
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false
+--enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill
+build\b9dbe592fc2ae558329e0a126bb30b5a.cache.dill.track.dill --source
+file:///C:/Users/2/Documents/saida_wifi_app/.dart_tool/flutter_build/dart_plugin_registrant.dart --source
+package:flutter/src/dart_plugin_registrant.dart
+-Dflutter.dart_plugin_registrant=file:///C:/Users/2/Documents/saida_wifi_app/.dart_tool/flutter_build/dart_plugin_regist
+rant.dart --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[  +18 ms] executing: C:\Users\2\AppData\Local\Android\sdk\platform-tools\adb.exe -s R5CN400LCFT shell -x logcat -v time
+-t 1
+[  +47 ms] <- compile package:saida_wifi_app/main.dart
+[ +509 ms] --------- beginning of main
+                    09-28 01:42:17.741 I/EDEN    ( 6490): [Exynos][EDEN][v1.6.17][SERVICE] processAliveMointorMain:190:
+                    Try to check pid=(6463)...
+[  +25 ms] executing: C:\Users\2\AppData\Local\Android\sdk\platform-tools\adb.exe version
+[  +73 ms] Android Debug Bridge version 1.0.41
+           Version 36.0.0-13206524
+           Installed as C:\Users\2\AppData\Local\Android\sdk\platform-tools\adb.exe
+           Running on Windows 10.0.19045
+[   +2 ms] executing: C:\Users\2\AppData\Local\Android\sdk\platform-tools\adb.exe start-server
+[  +67 ms] Building APK
+[  +13 ms] executing: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[ +227 ms] Exit code 0 from: C:\Program Files\Android\Android Studio\jbr\bin\java -version
+[   +1 ms] openjdk version "21.0.7" 2025-04-15
+           OpenJDK Runtime Environment (build 21.0.7+-13880790-b1038.58)
+           OpenJDK 64-Bit Server VM (build 21.0.7+-13880790-b1038.58, mixed mode)
+[  +15 ms] executing: C:\Program Files\Android\Android Studio\jbr\bin\java --version
+[ +219 ms] Exit code 0 from: C:\Program Files\Android\Android Studio\jbr\bin\java --version
+[   +3 ms] openjdk 21.0.7 2025-04-15
+           OpenJDK Runtime Environment (build 21.0.7+-13880790-b1038.58)
+           OpenJDK 64-Bit Server VM (build 21.0.7+-13880790-b1038.58, mixed mode)
+[   +5 ms] Version of Java is different than impacted version, no migration attempted.
+[  +41 ms] CMake project not found, skipping support Android 15 16k page size migration.
+[   +8 ms] Using gradle from C:\Users\2\Documents\saida_wifi_app\android\gradlew.bat.
+[  +11 ms] LocalFile: 'C:\Users\2\Documents\saida_wifi_app\android\build.gradle' provides AGP version from classpath:
+8.1.4
+[  +55 ms] Running Gradle task 'assembleDebug'...
+[  +10 ms] executing: [C:\Users\2\Documents\saida_wifi_app\android/]
+C:\Users\2\Documents\saida_wifi_app\android\gradlew.bat --full-stacktrace --info -Pverbose=true
+-Ptarget-platform=android-arm64 -Ptarget=C:\Users\2\Documents\saida_wifi_app\lib\main.dart
+-Pbase-application-name=android.app.Application
+-Pdart-defines=RkxVVFRFUl9WRVJTSU9OPTMuMzUuMw==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHV
+iLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YTQwMmQ5YTQzNw==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049Z
+GRmNDdkZDNmZg==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My45LjI= -Pdart-obfuscation=false -Ptrack-widget-creation=true
+-Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+[ +458 ms] Downloading https://services.gradle.org/distributions/gradle-8.2.1-all.zip
+[+1937 ms] lib/pages/invoices_page.dart:37:53: Error: Too many positional arguments: 0 allowed, but 1 found.
+[   +1 ms] Try removing the extra positional arguments.
+[        ]         final result = await _apiService.getInvoices(username);
+[        ]                                                     ^
+[   +2 ms] lib/pages/usage_page.dart:36:42: Error: The method 'getUsageData' isn't defined for the type 'ApiService'.
+[        ]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[        ] Try correcting the name to the name of an existing method, or defining a method named 'getUsageData'.
+[        ]         final result = await _apiService.getUsageData(username);
+[        ]                                          ^^^^^^^^^^^^
+[   +2 ms] lib/pages/hierarchical_usage_page.dart:149:42: Error: The method 'getYearsUsage' isn't defined for the type
+'ApiService'.
+[        ]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[        ] Try correcting the name to the name of an existing method, or defining a method named 'getYearsUsage'.
+[        ]         final result = await _apiService.getYearsUsage(username);
+[        ]                                          ^^^^^^^^^^^^^
+[        ] lib/pages/hierarchical_usage_page.dart:189:42: Error: The method 'getMonthsUsage' isn't defined for the type
+'ApiService'.
+[        ]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[        ] Try correcting the name to the name of an existing method, or defining a method named 'getMonthsUsage'.
+[        ]         final result = await _apiService.getMonthsUsage(username, year);
+[        ]                                          ^^^^^^^^^^^^^^
+[   +1 ms] lib/pages/hierarchical_usage_page.dart:224:42: Error: The method 'getDaysUsage' isn't defined for the type
+'ApiService'.
+[        ]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[   +1 ms] Try correcting the name to the name of an existing method, or defining a method named 'getDaysUsage'.
+[   +6 ms]         final result = await _apiService.getDaysUsage(username, year, month);
+[   +1 ms]                                          ^^^^^^^^^^^^
+[   +1 ms] lib/pages/hierarchical_usage_page.dart:259:42: Error: The method 'getSessionsUsage' isn't defined for the
+type 'ApiService'.
+[   +1 ms]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[   +1 ms] Try correcting the name to the name of an existing method, or defining a method named 'getSessionsUsage'.
+[   +1 ms]         final result = await _apiService.getSessionsUsage(username, year, month, day);
+[   +1 ms]                                          ^^^^^^^^^^^^^^^^
+[   +5 ms] lib/pages/services_page.dart:35:42: Error: The method 'getServices' isn't defined for the type 'ApiService'.
+[   +1 ms]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[   +2 ms] Try correcting the name to the name of an existing method, or defining a method named 'getServices'.
+[   +1 ms]         final result = await _apiService.getServices(username);
+[   +1 ms]                                          ^^^^^^^^^^^
+[   +1 ms] lib/pages/routers_page.dart:33:42: Error: The method 'getRoutersData' isn't defined for the type
+'ApiService'.
+[   +1 ms]  - 'ApiService' is from 'package:saida_wifi_app/api/api_service.dart' ('lib/api/api_service.dart').
+[   +1 ms] Try correcting the name to the name of an existing method, or defining a method named 'getRoutersData'.
+[   +4 ms]         final result = await _apiService.getRoutersData(username);
+[   +2 ms]                                          ^^^^^^^^^^^^^^
+[   +1 ms] lib/pages/connection_test_page.dart:73:36: Error: Member not found: 'server'.
+[   +1 ms]                         Icon(Icons.server, color: Theme.of(context).colorScheme.primary),
+[   +1 ms]                                    ^^^^^^
+[+85239 ms] Running 3 shutdown hooks
+[   +2 ms] Shutdown hooks complete
+[ +234 ms] exiting with code 0
+Terminate batch job (Y/N)? y
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+e: Daemon compilation failed: Could not connect to Kotlin compile daemon
+java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+        at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:114)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+exception: warning: ATTENTION!
+exception: this build uses unsafe internal compiler arguments:
+exception:
+exception:
+exception: this mode is not recommended for production use,
+exception: as no stability/compatibility guarantees are given on
+exception: compiler or generated code. Use it at your own risk!
+exception:
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:764:21: error: unresolved reference: filePermissions
+exception:                     filePermissions {
+exception:                     ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:765:25: error: unresolved reference: user
+exception:                         user {
+exception:                         ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:766:29: error: unresolved reference: read
+exception:                             read = true
+exception:                             ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:767:29: error: unresolved reference: write
+exception:                             write = true
+exception:                             ^
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':gradle:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 19s
+Running Gradle task 'assembleDebug'...                            ٢٠٠٫٣s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app> # 1. ???? radle cache ??????
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "$env:\.gradle" -ecurse -orce -rrorction ilentlyontinue
+At line:1 char:17
++ emove-tem -ath "$env:\.gradle" -ecurse -orce -rrorction ilentlyontinu ...
++                 ~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to
+delimit the name.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 2. ???? ?? ????? build
+PS C:\Users\2\Documents\saida_wifi_app> flutter clean
+Deleting build...                                                    ٣ms
+Deleting .dart_tool...                                               ١ms
+Deleting .flutter-plugins-dependencies...                            ١ms
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 3. ???? ndroid build files
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "android\build" -ecurse -orce -rrorction ilentlyontinue
+emove-tem : The term 'emove-tem' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ emove-tem -ath "android\build" -ecurse -orce -rrorction ilentlyontinu ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (emove-tem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\2\Documents\saida_wifi_app> emove-tem -ath "android\app\build" -ecurse -orce -rrorction ilentlyontinue
+emove-tem : The term 'emove-tem' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ emove-tem -ath "android\app\build" -ecurse -orce -rrorction ilentlyon ...
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (emove-tem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 4. ??? ????? ????????
+PS C:\Users\2\Documents\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> # 5. ??? ???????
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+Upgrading build.gradle
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not open cp_settings generic class cache for settings file 'C:\Users\2\Documents\saida_wifi_app\android\settings.gradle' (C:\Users\2\.gradle\caches\7.5\scripts\beu7exeh3deek4e0ir93u93cx).
+> BUG! exception in phase 'semantic analysis' in source unit '_BuildScript_' Unsupported class file major version 65
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2m 1s
+Running Gradle task 'assembleDebug'...                            ١٢٢٫٥s
+
+┌─ Flutter Fix ────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [!] Your project's Gradle version is incompatible with the Java version that Flutter is using for Gradle.            │
+│                                                                                                                      │
+│ To fix this issue, first, check the Java version used by Flutter by running `flutter doctor --verbose`.              │
+│                                                                                                                      │
+│ Then, update the Gradle version specified in                                                                         │
+│ C:\Users\2\Documents\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.properties to be compatible with that Java │
+│ version. See the link below for more information on compatible Java/Gradle versions:                                 │
+│ https://docs.gradle.org/current/userguide/compatibility.html#java                                                    │
+│                                                                                                                      │
+│                                                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app>
+
+
+
+
+

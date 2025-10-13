@@ -1,0 +1,86 @@
+عنوان URL الخاص بالطلب
+https://radius-manager-1-saida.replit.app/api/login
+طريقة الطلب
+POST
+رمز الحالة
+401 Unauthorized
+العنوان البعيد
+34.117.33.233:443
+سياسة المُحيل
+strict-origin-when-cross-origin
+access-control-allow-credentials
+true
+access-control-allow-origin
+https://radius-manager-1-saida.replit.app
+alt-svc
+h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+content-length
+71
+content-type
+application/json; charset=utf-8
+date
+Fri, 19 Sep 2025 12:35:12 GMT
+etag
+W/"47-CAWbmOdayAdC+tAyr90ZdiKJmpU"
+server
+Google Frontend
+strict-transport-security
+max-age=63072000; includeSubDomains
+vary
+Origin
+via
+1.1 google
+x-cloud-trace-context
+37bb62d3bbfa0970397e9ba10b14b81c
+x-powered-by
+Express
+:authority
+radius-manager-1-saida.replit.app
+:method
+POST
+:path
+/api/login
+:scheme
+https
+accept
+application/json
+accept-encoding
+gzip, deflate, br, zstd
+accept-language
+en-US,en;q=0.9,ar;q=0.8
+content-length
+37
+content-type
+application/json
+cookie
+__REPLSHIELD=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEbWd3eS1HNHpfMk1ZVHMwLTBRaWUiLCJ1c2VySWQiOjQwNzk2ODc2LCJkZXBsb3ltZW50SWQiOiI1NWEzYmEwMi0zYzkwLTQ4ZTUtOTQ2Ni05NTllYmI5NTQ3NjQiLCJpYXQiOjE3NTgyNDM2MjYsImV4cCI6MTc1ODMzMDAyNn0.bwMgmVP5mgTzKX3Ec2imX1R0ZRHdpay-q1UqifhyjChdwd8UM2a9BgJrcP4uGOVBabeqG1pNCzb-xHYirijImA
+dnt
+1
+origin
+https://radius-manager-1-saida.replit.app
+priority
+u=1, i
+referer
+https://radius-manager-1-saida.replit.app/
+sec-ch-ua
+"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"
+sec-ch-ua-mobile
+?0
+sec-ch-ua-platform
+"Windows"
+sec-fetch-dest
+empty
+sec-fetch-mode
+cors
+sec-fetch-site
+same-origin
+user-agent
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Ask AI about more insights
+You can now ask Gemini about more performance insights: image delivery, legacy JavaScript, duplicate JavaScript, and modern HTTP.
+
+Emulate the 'Save-Data' header
+In 'Network conditions', you can now emulate the 'Save-Data' request header that indicates the client's preference for reduced data usage.
+
+Debug complex CSS values easier
+See also, from version 138: The Elements > Styles tab can now show you a tooltip with a breakdown of the definition chain and step-by-step evaluations of complex CSS variables, so you can find bugs quicker and gain a deeper understanding of how a value is computed.

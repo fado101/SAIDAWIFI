@@ -1,0 +1,80 @@
+Request URL
+https://saidawifi.com/api/auth/user
+Request Method
+OPTIONS
+Status Code
+404 Not Found
+Remote Address
+34.111.179.208:443
+Referrer Policy
+strict-origin-when-cross-origin
+:authority
+saidawifi.com
+:method
+OPTIONS
+:path
+/api/auth/user
+:scheme
+https
+accept
+*/*
+accept-encoding
+gzip, deflate, br, zstd
+accept-language
+en-US,en;q=0.9,ar;q=0.8
+access-control-request-headers
+authorization,content-type
+access-control-request-method
+GET
+origin
+http://127.0.0.1:5000
+priority
+u=1, i
+referer
+http://127.0.0.1:5000/
+sec-fetch-dest
+empty
+sec-fetch-mode
+cors
+sec-fetch-site
+cross-site
+user-agent
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+﻿
+useAuth.ts:65 ❌ Error validating authentication: TypeError: Failed to fetch
+    at AuthService.authenticatedRequest (authService.ts:276:28)
+    at AuthService.get (authService.ts:294:17)
+    at queryFn (useAuth.ts:49:46)
+useAuth.ts:72 🔐 Hybrid Auth status - user: null isAuthenticated: false environment: Node.js API
+dashboard:1 [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) 
+login.tsx:99 🔐 FRONTEND: Attempting JWT login for user: fhd
+login.tsx:27 🔑 Starting JWT login process for: fhd
+authService.ts:100 🔐 [SECURE AUTH] Starting secure login request for: fhd
+authService.ts:148 🔧 [SECURE] Using Node.js server for development
+authService.ts:158 📥 [SECURE] Login response status: 200
+authService.ts:165 📄 [SECURE] Login response received successfully
+authService.ts:70 ✅ Token saved to Capacitor Preferences
+authService.ts:179 ✅ [SECURE] Login successful via Node.js server
+authService.ts:180 👤 [SECURE] User data saved: 
+{username: 'fhd', email: 'fhd', firstName: 'fhd', lastName: ''}
+login.tsx:38 ✅ JWT Login successful: fhd
+login.tsx:49 ✅ Login successful: 
+{isAuthenticated: true, username: 'fhd', email: 'fhd', firstName: 'fhd', lastName: ''}
+useAuth.ts:13 🔐 Hybrid Auth Check - Environment: Node.js API
+authService.ts:39 ✅ Token loaded from Capacitor Preferences
+useAuth.ts:24 🔑 JWT token found, validating...
+useAuth.ts:48 🔧 Using Node.js API for auth validation
+authService.ts:255 🔑 Adding Authorization header
+api.ts:36 🌐 External browser - using production server
+authService.ts:273 🌐 Making authenticated request to: https://saidawifi.com/api/auth/user
+authService.ts:274 📤 Making authenticated request
+dashboard:1 Access to fetch at 'https://saidawifi.com/api/auth/user' from origin 'http://127.0.0.1:5000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+authService.ts:276 
+ GET https://saidawifi.com/api/auth/user net::ERR_FAILED
+useAuth.ts:65 ❌ Error validating authentication: TypeError: Failed to fetch
+    at AuthService.authenticatedRequest (authService.ts:276:28)
+    at AuthService.get (authService.ts:294:17)
+    at queryFn (useAuth.ts:49:46)
+
+login.tsx:61 🔄 Navigating to dashboard
+﻿

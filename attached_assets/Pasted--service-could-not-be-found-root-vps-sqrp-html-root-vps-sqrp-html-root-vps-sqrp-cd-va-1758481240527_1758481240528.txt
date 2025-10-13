@@ -1,0 +1,461 @@
+.service could not be found.
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# [root@vps-sqrp ~]# cd /var/www/html
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# ls -la saida-wifi-manager-final-syria.tar_2.gz
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# -rw-r--r-- 1 root root 633992 Sep 21 14:43 saida-wifi-manager-final-syria.tar_2.gz
+-bash: -rw-r--r--: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# tar -tzf saida-wifi-manager-final-syria.tar_2.gz | head -20
+-bash: [root@vps-sqrp: command not found
+./client/src/components/ui/input-otp.tsx
+./client/src/components/ui/hover-card.tsx
+./client/src/components/ui/sheet.tsx
+./client/src/components/ui/scroll-area.tsx
+./client/src/components/ui/resizable.tsx
+./client/src/components/ui/label.tsx
+[root@vps-sqrp html]# sudo mv /var/www/html /var/www/html.backup.$(date +%Y%m%d_%H%M%S)
+[root@vps-sqrp html]# ./
+-bash: ./: Is a directory
+[root@vps-sqrp html]# ./client/
+-bash: ./client/: No such file or directory
+[root@vps-sqrp html]# ./client/src/
+-bash: ./client/src/: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/
+-bash: ./client/src/components/: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/
+[root@vps-sqrp html]# sudo mkdir -p /var/www/html
+[root@vps-sqrp html]# sudo tar --no-same-owner --no-same-permissions -xzf saida-wifi-manager-final-syria.tar_2.gz -C /var/www/html/
+[root@vps-sqrp html]# sudo chown -R www-data:www-data /var/www/html/
+chown: invalid user: ‘www-data:www-data’
+[root@vps-sqrp html]# sudo find /var/www/html/ -typ-bash: ./client/src/components/ui/: No such file or directory
+e d -exec chmod 755 {} \;
+[root@vps-sqrp html]# sudo find /var/www/html/ -type f -exec chmod 644 {} \;
+[root@vps-sqrp html]# sudo find /var/www/html/ -name "*.php" -exec chmod 644 {} \;
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# sudo find /var/www/html/ -name "*.sh" -exec chmod +x {} \;
+[root@vps-sqrp html]# ./client/src/components/ui/aspect-ratio.tsx
+-bash: ./client/src/components/ui/aspect-ratio.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/alert-dialog.tsx
+-bash: ./client/src/components/ui/alert-dialog.tsx: No such file or directory
+[root@vps-sqrp html]# sudo a2enmod rewrite
+sudo: a2enmod: command not found
+[root@vps-sqrp html]# sudo systemctl restart apache2
+Failed to restart apache2.service: Unit not found.
+[root@vps-sqrp html]# sudo systemctl status apache2
+Unit apache2.service could not be found.
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# ./client/src/components/ui/pagination.tsx
+-bash: ./client/src/components/ui/pagination.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/tabs.tsx
+-bash: ./client/src/components/ui/tabs.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/card.tsx
+-bash: ./client/src/components/ui/card.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/slider.tsx
+-bash: ./client/src/components/ui/slider.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/popover.tsx
+-bash: ./client/src/components/ui/popover.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/progress.tsx
+-bash: ./client/src/components/ui/progress.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/toaster.tsx
+-bash: ./client/src/components/ui/toaster.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/input-otp.tsx
+-bash: ./client/src/components/ui/input-otp.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/hover-card.tsx
+-bash: ./client/src/components/ui/hover-card.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/sheet.tsx
+-bash: ./client/src/components/ui/sheet.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/scroll-area.tsx
+-bash: ./client/src/components/ui/scroll-area.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/resizable.tsx
+-bash: ./client/src/components/ui/resizable.tsx: No such file or directory
+[root@vps-sqrp html]# ./client/src/components/ui/label.tsx
+-bash: ./client/src/components/ui/label.tsx: No such file or directory
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo mv /var/www/html /var/www/html.backup.$(date +%Y%m%d_%H%M%S)
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo mkdir -p /var/www/html
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo tar --no-same-owner --no-same-permissions -xzf saida-wifi-manager-final-syria.tar_2.gz -C /var/www/html/
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo chown -R www-data:www-data /var/www/html/
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# chown: invalid user: ‘www-data:www-data’
+-bash: chown:: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo find /var/www/html/ -type d -exec chmod 755 {} \;
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo find /var/www/html/ -type f -exec chmod 644 {} \;
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo find /var/www/html/ -name "*.php" -exec chmod 644 {} \;
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo find /var/www/html/ -name "*.sh" -exec chmod +x {} \;
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo a2enmod rewrite
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# sudo: a2enmod: command not found
+-bash: sudo:: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo systemctl restart apache2
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# Failed to restart apache2.service: Unit not found.
+-bash: Failed: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]# sudo systemctl status apache2
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# Unit apache2.service could not be found.
+-bash: Unit: command not found
+[root@vps-sqrp html]# [root@vps-sqrp html]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp html]# sudo nginx -t
+sudo: nginx: command not found
+[root@vps-sqrp html]# cat /etc/os-release
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+[root@vps-sqrp html]# systemctl list-units --type=service | grep -E "httpd|nginx|apache"
+  httpd.service                      loaded active running The Apache HTTP Server
+[root@vps-sqrp html]# ps aux | grep -E "httpd|nginx|apache"
+root      4110  0.0  0.0 112812   984 pts/0    S+   14:58   0:00 grep --color=auto -E httpd|nginx|apache
+apache    5143  0.0  0.6 657416 54368 ?        S    12:50   0:02 /usr/sbin/httpd -DFOREGROUND
+apache    5194  0.0  0.8 674252 64260 ?        S    10:51   0:05 /usr/sbin/httpd -DFOREGROUND
+root     22676  0.0  0.4 620148 32060 ?        Ss   Sep19   0:16 /usr/sbin/httpd -DFOREGROUND
+apache   25144  0.0  0.7 660348 57768 ?        S    12:35   0:01 /usr/sbin/httpd -DFOREGROUND
+apache   26528  0.0  0.3 630644 27716 ?        S    13:18   0:01 /usr/sbin/httpd -DFOREGROUND
+apache   26906  0.0  0.3 630120 27120 ?        S    13:19   0:01 /usr/sbin/httpd -DFOREGROUND
+apache   26997  0.0  0.7 660620 56104 ?        S    14:01   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   27301  0.0  0.7 672960 61824 ?        S    13:19   0:01 /usr/sbin/httpd -DFOREGROUND
+apache   27937  0.0  0.3 630032 26400 ?        S    14:03   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   29630  0.0  0.3 642648 31296 ?        S    13:22   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   31636  0.0  0.3 629872 26276 ?        S    14:08   0:00 /usr/sbin/httpd -DFOREGROUND
+[root@vps-sqrp html]# sudo chown -R apache:apache /var/www/html/
+[root@vps-sqrp html]# sudo chown -R nginx:nginx /var/www/html/
+chown: invalid user: ‘nginx:nginx’
+[root@vps-sqrp html]# grep -E "^(apache|nginx|www-data)" /etc/passwd
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+[root@vps-sqrp html]# # تثبيت Apache
+[root@vps-sqrp html]# sudo yum install httpd -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * elrepo: mirror.rackspace.com
+ * epel: pubmirror1.math.uh.edu
+Package httpd-2.4.6-99.el7.centos.1.x86_64 already installed and latest version
+Nothing to do
+[root@vps-sqrp html]# # أو في الأنظمة الأحدث:
+[root@vps-sqrp html]# sudo dnf install httpd -y
+sudo: dnf: command not found
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # تشغيل Apache
+[root@vps-sqrp html]# sudo systemctl start httpd
+[root@vps-sqrp html]# sudo systemctl enable httpd
+[root@vps-sqrp html]# sudo systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Fri 2025-09-19 10:46:02 EDT; 2 days ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+ Main PID: 22676 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+   CGroup: /system.slice/httpd.service
+           ├─ 5143 /usr/sbin/httpd -DFOREGROUND
+           ├─ 5194 /usr/sbin/httpd -DFOREGROUND
+           ├─22676 /usr/sbin/httpd -DFOREGROUND
+           ├─25144 /usr/sbin/httpd -DFOREGROUND
+           ├─26528 /usr/sbin/httpd -DFOREGROUND
+           ├─26906 /usr/sbin/httpd -DFOREGROUND
+           ├─26997 /usr/sbin/httpd -DFOREGROUND
+           ├─27301 /usr/sbin/httpd -DFOREGROUND
+           ├─27937 /usr/sbin/httpd -DFOREGROUND
+           ├─29630 /usr/sbin/httpd -DFOREGROUND
+           └─31636 /usr/sbin/httpd -DFOREGROUND
+
+Sep 19 10:46:02 vps-sqrp.com systemd[1]: Starting The Apache HTTP Server...
+Sep 19 10:46:02 vps-sqrp.com httpd[22676]: [Fri Sep 19 10:46:02.625499 2025]...g
+Sep 19 10:46:02 vps-sqrp.com systemd[1]: Started The Apache HTTP Server.
+Sep 21 03:26:02 vps-sqrp.com systemd[1]: Reloading The Apache HTTP Server.
+Sep 21 03:26:02 vps-sqrp.com httpd[19452]: [Sun Sep 21 03:26:02.085194 2025]...g
+Sep 21 03:26:02 vps-sqrp.com systemd[1]: Reloaded The Apache HTTP Server.
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@vps-sqrp html]# # تثبيت Nginx
+[root@vps-sqrp html]# sudo yum install nginx -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * elrepo: mirror.rackspace.com
+ * epel: pubmirror1.math.uh.edu
+Resolving Dependencies
+--> Running transaction check
+---> Package nginx.x86_64 1:1.20.1-10.el7 will be installed
+--> Processing Dependency: nginx-filesystem = 1:1.20.1-10.el7 for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: libcrypto.so.1.1(OPENSSL_1_1_0)(64bit) for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: libssl.so.1.1(OPENSSL_1_1_0)(64bit) for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: libssl.so.1.1(OPENSSL_1_1_1)(64bit) for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: nginx-filesystem for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: redhat-indexhtml for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: libcrypto.so.1.1()(64bit) for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: libprofiler.so.0()(64bit) for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Processing Dependency: libssl.so.1.1()(64bit) for package: 1:nginx-1.20.1-10.el7.x86_64
+--> Running transaction check
+---> Package centos-indexhtml.noarch 0:7-9.el7.centos will be installed
+---> Package gperftools-libs.x86_64 0:2.6.1-1.el7 will be installed
+---> Package nginx-filesystem.noarch 1:1.20.1-10.el7 will be installed
+---> Package openssl11-libs.x86_64 1:1.1.1k-7.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch          Version                Repository   Size
+================================================================================
+Installing:
+ nginx                   x86_64        1:1.20.1-10.el7        epel        588 k
+Installing for dependencies:
+ centos-indexhtml        noarch        7-9.el7.centos         base         92 k
+ gperftools-libs         x86_64        2.6.1-1.el7            base        272 k
+ nginx-filesystem        noarch        1:1.20.1-10.el7        epel         24 k
+ openssl11-libs          x86_64        1:1.1.1k-7.el7         epel        1.5 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 2.4 M
+Installed size: 6.7 M
+Downloading packages:
+(1/5): nginx-1.20.1-10.el7.x86_64.rpm                      | 588 kB   00:00
+(2/5): centos-indexhtml-7-9.el7.centos.noarch.rpm          |  92 kB   00:00
+(3/5): nginx-filesystem-1.20.1-10.el7.noarch.rpm           |  24 kB   00:00
+(4/5): gperftools-libs-2.6.1-1.el7.x86_64.rpm              | 272 kB   00:00
+(5/5): openssl11-libs-1.1.1k-7.el7.x86_64.rpm              | 1.5 MB   00:00
+--------------------------------------------------------------------------------
+Total                                              3.6 MB/s | 2.4 MB  00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:openssl11-libs-1.1.1k-7.el7.x86_64                         1/5
+  Installing : 1:nginx-filesystem-1.20.1-10.el7.noarch                      2/5
+  Installing : centos-indexhtml-7-9.el7.centos.noarch                       3/5
+  Installing : gperftools-libs-2.6.1-1.el7.x86_64                           4/5
+  Installing : 1:nginx-1.20.1-10.el7.x86_64                                 5/5
+  Verifying  : gperftools-libs-2.6.1-1.el7.x86_64                           1/5
+  Verifying  : centos-indexhtml-7-9.el7.centos.noarch                       2/5
+  Verifying  : 1:nginx-filesystem-1.20.1-10.el7.noarch                      3/5
+  Verifying  : 1:nginx-1.20.1-10.el7.x86_64                                 4/5
+  Verifying  : 1:openssl11-libs-1.1.1k-7.el7.x86_64                         5/5
+
+Installed:
+  nginx.x86_64 1:1.20.1-10.el7
+
+Dependency Installed:
+  centos-indexhtml.noarch 0:7-9.el7.centos gperftools-libs.x86_64 0:2.6.1-1.el7
+  nginx-filesystem.noarch 1:1.20.1-10.el7  openssl11-libs.x86_64 1:1.1.1k-7.el7
+
+Complete!
+[root@vps-sqrp html]# # أو:
+[root@vps-sqrp html]# sudo dnf install nginx -y
+sudo: dnf: command not found
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # تشغيل Nginx
+[root@vps-sqrp html]# sudo systemctl start nginx
+Job for nginx.service failed because the control process exited with error code. See "systemctl status nginx.service" and "journalctl -xe" for details.
+[root@vps-sqrp html]# sudo systemctl enable nginx
+Created symlink from /etc/systemd/system/multi-user.target.wants/nginx.service to /usr/lib/systemd/system/nginx.service.
+[root@vps-sqrp html]# sudo systemctl status nginx
+● nginx.service - The nginx HTTP and reverse proxy server
+   Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Sun 2025-09-21 14:59:09 EDT; 2s ago
+
+Sep 21 14:59:07 vps-sqrp.com nginx[4601]: nginx: [emerg] bind() to 0.0.0.0:8...)
+Sep 21 14:59:07 vps-sqrp.com nginx[4601]: nginx: [emerg] bind() to 0.0.0.0:8...)
+Sep 21 14:59:08 vps-sqrp.com nginx[4601]: nginx: [emerg] bind() to 0.0.0.0:8...)
+Sep 21 14:59:08 vps-sqrp.com nginx[4601]: nginx: [emerg] bind() to 0.0.0.0:8...)
+Sep 21 14:59:09 vps-sqrp.com nginx[4601]: nginx: [emerg] bind() to 0.0.0.0:8...)
+Sep 21 14:59:09 vps-sqrp.com nginx[4601]: nginx: [emerg] still could not bind()
+Sep 21 14:59:09 vps-sqrp.com systemd[1]: nginx.service: control process exit...1
+Sep 21 14:59:09 vps-sqrp.com systemd[1]: Failed to start The nginx HTTP and ....
+Sep 21 14:59:09 vps-sqrp.com systemd[1]: Unit nginx.service entered failed s....
+Sep 21 14:59:09 vps-sqrp.com systemd[1]: nginx.service failed.
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@vps-sqrp html]# # فتح البورتات المطلوبة
+[root@vps-sqrp html]# sudo firewall-cmd --permanent --add-port=80/tcp
+FirewallD is not running
+[root@vps-sqrp html]# sudo firewall-cmd --permanent --add-port=443/tcp
+FirewallD is not running
+[root@vps-sqrp html]# sudo firewall-cmd --reload
+FirewallD is not running
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # فحص حالة Firewall
+[root@vps-sqrp html]# sudo firewall-cmd --list-all
+FirewallD is not running
+[root@vps-sqrp html]# # فحص حالة SELinux
+[root@vps-sqrp html]# getenforce
+Disabled
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # إعداد SELinux للويب
+[root@vps-sqrp html]# sudo setsebool -P httpd_can_network_connect 1
+# إعداد السياق الأمني للملفات
+sudo restorecon -Rv /var/www/html/
+
+# أو تعطيل SELinux مؤقتاً للاختبار
+sudo setenforce 0setsebool:  SELinux is disabled.
+[root@vps-sqrp html]# sudo setsebool -P httpd_can_network_relay 1
+setsebool:  SELinux is disabled.
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # إعداد السياق الأمني للملفات
+[root@vps-sqrp html]# sudo restorecon -Rv /var/www/html/
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # أو تعطيل SELinux مؤقتاً للاختبار
+[root@vps-sqrp html]# sudo setenforce 0
+setenforce: SELinux is disabled
+[root@vps-sqrp html]# # فحص محتويات المجلد
+[root@vps-sqrp html]# ls -la /var/www/html/
+total 736
+drwxr-xr-x  5 apache apache   4096 Sep 20 15:10 .
+drwxr-xr-x. 5 root   root     4096 Sep 21 14:54 ..
+drwxr-xr-x  5 apache apache   4096 Sep 18 10:39 client
+-rw-r--r--  1 apache apache    459 Sep 18 10:39 components.json
+-rw-r--r--  1 apache apache   1053 Sep 18 10:40 CRITICAL_SECURITY_WARNING.txt
+-rw-r--r--  1 apache apache   5362 Sep 20 15:01 DEPLOYMENT_GUIDE.md
+-rw-r--r--  1 apache apache   3826 Sep 18 10:39 DEPLOYMENT_README.md
+-rw-r--r--  1 apache apache   1834 Sep 18 10:39 deployment-security-fixes.md
+-rw-r--r--  1 apache apache    742 Sep 20 15:00 Dockerfile
+-rw-r--r--  1 apache apache    325 Sep 18 10:39 drizzle.config.ts
+-rw-r--r--  1 apache apache    653 Sep 20 15:00 .env.example
+-rw-r--r--  1 apache apache   4275 Sep 20 14:59 package.json
+-rw-r--r--  1 apache apache 373227 Sep 18 10:39 package-lock.json
+-rw-r--r--  1 apache apache     80 Sep 18 10:39 postcss.config.js
+-rw-r--r--  1 apache apache    491 Sep 20 15:00 railway.json
+-rw-r--r--  1 apache apache  19762 Sep 20 14:59 saida-wifi-logo-new.jpg
+-rw-r--r--  1 apache apache 262144 Sep 20 15:10 saida-wifi-manager-final-syria.tar.gz
+drwxr-xr-x  2 apache apache   4096 Sep 19 18:21 server
+drwxr-xr-x  2 apache apache   4096 Sep 18 10:39 shared
+-rw-r--r--  1 apache apache   1374 Sep 18 10:39 tailwind.config.js
+-rw-r--r--  1 apache apache   2627 Sep 18 10:39 tailwind.config.ts
+-rw-r--r--  1 apache apache    657 Sep 18 10:39 tsconfig.json
+-rw-r--r--  1 apache apache    458 Sep 20 15:00 vercel.json
+-rw-r--r--  1 apache apache    971 Sep 18 10:39 vite.config.ts
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # فحص ملفات التطبيق
+[root@vps-sqrp html]# find /var/www/html/ -name "index.html" -o -name "index.php" -o -name "package.json"
+/var/www/html/client/index.html
+/var/www/html/client/dist/index.html
+/var/www/html/package.json
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # إذا كان تطبيق Node.js
+[root@vps-sqrp html]# cd /var/www/html/
+[root@vps-sqrp html]# ls -la package.json
+-rw-r--r-- 1 apache apache 4275 Sep 20 14:59 package.json
+[root@vps-sqrp html]# # تثبيت Node.js إن لم يكن مثبت
+[root@vps-sqrp html]# curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
+2025-09-21 15:00:07 - Cleaning up old repositories...
+2025-09-21 15:00:07 - Old repositories removed
+2025-09-21 15:00:07 - Supported architecture: x86_64
+2025-09-21 15:00:07 - Added N|Solid repository for LTS version: 18.x
+2025-09-21 15:00:07 - yum available, updating...
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+nodesource-nodejs                                        | 3.0 kB     00:00
+Not using downloaded nodesource-nodejs/repomd.xml because it is older than what we have:
+  Current   : Wed Sep  3 15:58:58 2025
+  Downloaded: Thu Mar 27 09:38:36 2025
+Metadata Cache Created
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+nodesource-nsolid                                        | 3.0 kB     00:00
+(1/3): nodesource-nsolid/primary_db                        |  30 kB   00:00
+(2/3): nodesource-nsolid/filelists_db                      | 546 kB   00:00
+(3/3): nodesource-nsolid/other_db                          | 2.9 kB   00:00
+Metadata Cache Created
+2025-09-21 15:00:08 - Repository is configured and updated.
+2025-09-21 15:00:08 - You can use N|solid Runtime as a node.js alternative
+2025-09-21 15:00:08 - Run 'yum install nsolid -y' to complete the installation.
+2025-09-21 15:00:08 - Run 'yum install nodejs -y' to complete the installation.
+[root@vps-sqrp html]# sudo yum install nodejs -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * elrepo: mirror.rackspace.com
+ * epel: pubmirror1.math.uh.edu
+Resolving Dependencies
+--> Running transaction check
+---> Package nodejs.x86_64 2:20.19.5-1nodesource will be installed
+--> Processing Dependency: glibc >= 2.28 for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libm.so.6(GLIBC_2.27)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libstdc++.so.6(CXXABI_1.3.9)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libstdc++.so.6(GLIBCXX_3.4.20)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libstdc++.so.6(GLIBCXX_3.4.21)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libc.so.6(GLIBC_2.28)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Finished Dependency Resolution
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(CXXABI_1.3.9)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(GLIBCXX_3.4.20)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(GLIBCXX_3.4.21)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libm.so.6(GLIBC_2.27)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: glibc >= 2.28
+           Installed: glibc-2.17-326.el7_9.3.i686 (@updates)
+               glibc = 2.17-326.el7_9.3
+           Available: glibc-2.17-317.el7.i686 (base)
+               glibc = 2.17-317.el7
+           Available: glibc-2.17-322.el7_9.i686 (updates)
+               glibc = 2.17-322.el7_9
+           Available: glibc-2.17-323.el7_9.i686 (updates)
+               glibc = 2.17-323.el7_9
+           Available: glibc-2.17-324.el7_9.i686 (updates)
+               glibc = 2.17-324.el7_9
+           Available: glibc-2.17-325.el7_9.i686 (updates)
+               glibc = 2.17-325.el7_9
+           Available: glibc-2.17-326.el7_9.i686 (updates)
+               glibc = 2.17-326.el7_9
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libc.so.6(GLIBC_2.28)(64bit)
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # الانتقال للمجلد وتثبيت التبعيات
+[root@vps-sqrp html]# cd /var/www/html/
+[root@vps-sqrp html]# npm install
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# # تشغيل التطبيق
+[root@vps-sqrp html]# npm start
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+[root@vps-sqrp html]# # أو
+[root@vps-sqrp html]# npm run dev
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+[root@vps-sqrp html]# npm run dev
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+[root@vps-sqrp html]#

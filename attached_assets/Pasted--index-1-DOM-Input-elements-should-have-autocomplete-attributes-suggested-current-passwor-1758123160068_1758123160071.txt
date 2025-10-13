@@ -1,0 +1,43 @@
+
+﻿
+(index):1 [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) 
+(index):1 Access to manifest at 'https://replit.com/__replshield?redirect=https%3A%2F%2Fsaidawifi.com%2Fmanifest.json' (redirected from 'https://saidawifi.com/manifest.json') from origin 'https://saidawifi.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+replit.com/__replshi…m%2Fmanifest.json:1 
+ GET https://replit.com/__replshield?redirect=https%3A%2F%2Fsaidawifi.com%2Fmanifest.json net::ERR_FAILED 302 (Found)
+
+index-drxQJtXz.js:243 🔐 FRONTEND: Attempting JWT login for user: drjado
+index-drxQJtXz.js:243 🔑 Starting JWT login process for: drjado
+index-drxQJtXz.js:48 🔑 Starting login request for: drjado
+index-drxQJtXz.js:48 🌐 Using login URL: https://ef902220-dec2-4c3c-8d60-45cdf8671b75-00-3qzabwet6qweq.pike.replit.dev/api/login
+(index):1 Access to fetch at 'https://ef902220-dec2-4c3c-8d60-45cdf8671b75-00-3qzabwet6qweq.pike.replit.dev/api/login' from origin 'https://saidawifi.com' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+index-drxQJtXz.js:48 
+ POST https://ef902220-dec2-4c3c-8d60-45cdf8671b75-00-3qzabwet6qweq.pike.replit.dev/api/login net::ERR_FAILED
+index-drxQJtXz.js:48 ❌ Login error: TypeError: Failed to fetch
+    at tS.login (index-drxQJtXz.js:48:45064)
+    at Object.mutationFn (index-drxQJtXz.js:243:61568)
+    at Object.fn (index-drxQJtXz.js:48:19511)
+    at S (index-drxQJtXz.js:48:9973)
+    at Object.start (index-drxQJtXz.js:48:10432)
+    at sp.execute (index-drxQJtXz.js:48:20311)
+index-drxQJtXz.js:243 ❌ JWT Login failed: حدث خطأ أثناء تسجيل الدخول: Failed to fetch
+mutationFn	@	index-drxQJtXz.js:243
+await in mutationFn		
+fn	@	index-drxQJtXz.js:48
+S	@	index-drxQJtXz.js:48
+start	@	index-drxQJtXz.js:48
+execute	@	index-drxQJtXz.js:48
+await in execute		
+mutate	@	index-drxQJtXz.js:48
+(anonymous)	@	index-drxQJtXz.js:48
+a	@	index-drxQJtXz.js:243
+V0	@	index-drxQJtXz.js:37
+K0	@	index-drxQJtXz.js:37
+Q0	@	index-drxQJtXz.js:37
+Sf	@	index-drxQJtXz.js:37
+ym	@	index-drxQJtXz.js:37
+(anonymous)	@	index-drxQJtXz.js:37
+ld	@	index-drxQJtXz.js:40
+Bp	@	index-drxQJtXz.js:37
+ba	@	index-drxQJtXz.js:37
+Mu	@	index-drxQJtXz.js:37
+cx	@	index-drxQJtXz.js:37

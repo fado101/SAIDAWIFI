@@ -1,0 +1,491 @@
+
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app>
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not open cp_settings generic class cache for settings file 'C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android\settings.gradle' (C:\Users\2\.gradle\caches\7.6.3\scripts\4o3bwgk78pzmozextzr0d16g5).
+> BUG! exception in phase 'semantic analysis' in source unit '_BuildScript_' Unsupported class file major version 65
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+Running Gradle task 'assembleDebug'...                              ٥٫٢s
+
+┌─ Flutter Fix ───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [!] Your project's Gradle version is incompatible with the Java version that Flutter is using for Gradle.           │
+│                                                                                                                     │
+│ To fix this issue, first, check the Java version used by Flutter by running `flutter doctor --verbose`.             │
+│                                                                                                                     │
+│ Then, update the Gradle version specified in                                                                        │
+│ C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.properties to │
+│ be compatible with that Java version. See the link below for more information on compatible Java/Gradle versions:   │
+│ https://docs.gradle.org/current/userguide/compatibility.html#java                                                   │
+│                                                                                                                     │
+│                                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> cd "C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app"
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> cd android
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android> del /Q gradle\wrapper\gradle-wrapper.jar
+Remove-Item : A positional parameter cannot be found that accepts argument 'gradle\wrapper\gradle-wrapper.jar'.
+At line:1 char:1
++ del /Q gradle\wrapper\gradle-wrapper.jar
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android> del /Q gradle\wrapper\gradle-wrapper.properties
+Remove-Item : A positional parameter cannot be found that accepts argument 'gradle\wrapper\gradle-wrapper.properties'.
+At line:1 char:1
++ del /Q gradle\wrapper\gradle-wrapper.properties
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android> .\gradlew wrapper --gradle-version=8.7
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Configure project :gradle
+WARNING: Unsupported Kotlin plugin version.
+The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `1.7.10` that might work differently than in the requested version `1.9.20`.
+
+> Task :gradle:compileKotlin
+w: Inconsistent JVM-target compatibility detected for tasks 'compileJava' (11) and 'compileKotlin' (1.8).
+This will become an error in Gradle 8.0.
+Consider using JVM Toolchain: https://kotl.in/gradle/jvm/toolchain
+Learn more about JVM-target validation: https://kotl.in/gradle/jvm/target-validation
+
+e: Daemon compilation failed: Could not connect to Kotlin compile daemon
+java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+        at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$2(DefaultWorkerExecutor.java:212)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:114)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:49)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:842)
+
+Failed to compile with Kotlin daemon: java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+        at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$2(DefaultWorkerExecutor.java:212)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:114)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:49)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:842)
+Using fallback strategy: Compile without Kotlin daemon
+Try ./gradlew --stop if this issue persists.
+exception: warning: ATTENTION!
+exception: this build uses unsafe internal compiler arguments:
+exception:
+exception: -XXLanguage:+DisableCompatibilityModeForNewInference
+exception:
+exception: this mode is not recommended for production use,
+exception: as no stability/compatibility guarantees are given on
+exception: compiler or generated code. Use it at your own risk!
+exception:
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:764:21: error: unresolved reference: filePermissions
+exception:                     filePermissions {
+exception:                     ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:765:25: error: unresolved reference: user
+exception:                         user {
+exception:                         ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:766:29: error: unresolved reference: read
+exception:                             read = true
+exception:                             ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:767:29: error: unresolved reference: write
+exception:                             write = true
+exception:                             ^
+
+> Task :gradle:compileKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':gradle:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2m 30s
+? actionable tasks: ? executed
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android> cd ..
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> flutter clean
+Deleting build...                                                    ٣ms
+Deleting .dart_tool...                                               ١ms
+Deleting .flutter-plugins-dependencies...                            ٠ms
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> flutter pub get
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 3.0.2 (6.0.0 available)
+  flutter_riverpod 2.6.1 (3.0.0 available)
+  lints 3.0.0 (6.0.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  riverpod 2.6.1 (3.0.0 available)
+  test_api 0.7.6 (0.7.7 available)
+Got dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+e: Daemon compilation failed: Could not connect to Kotlin compile daemon
+java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+        at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$2(DefaultWorkerExecutor.java:212)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:114)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:49)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+exception: warning: ATTENTION!
+exception: this build uses unsafe internal compiler arguments:
+exception:
+exception: -XXLanguage:+DisableCompatibilityModeForNewInference
+exception:
+exception: this mode is not recommended for production use,
+exception: as no stability/compatibility guarantees are given on
+exception: compiler or generated code. Use it at your own risk!
+exception:
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:764:21: error: unresolved reference: filePermissions
+exception:                     filePermissions {
+exception:                     ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:765:25: error: unresolved reference: user
+exception:                         user {
+exception:                         ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:766:29: error: unresolved reference: read
+exception:                             read = true
+exception:                             ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:767:29: error: unresolved reference: write
+exception:                             write = true
+exception:                             ^
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':gradle:compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 15s
+Running Gradle task 'assembleDebug'...                             ١٦٫٢s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app>
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> # ?????? ?????? ??????? ??????? ??????
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> cd C:\Users\2\Documents\saida_wifi_app
+PS C:\Users\2\Documents\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+e: Daemon compilation failed: Could not connect to Kotlin compile daemon
+java.lang.RuntimeException: Could not connect to Kotlin compile daemon
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemon(GradleKotlinCompilerWork.kt:218)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileWithDaemonOrFallbackImpl(GradleKotlinCompilerWork.kt:175)
+        at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:135)
+        at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:73)
+        at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+        at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+        at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+        at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+        at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:78)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+exception: warning: ATTENTION!
+exception: this build uses unsafe internal compiler arguments:
+exception:
+exception:
+exception: this mode is not recommended for production use,
+exception: as no stability/compatibility guarantees are given on
+exception: compiler or generated code. Use it at your own risk!
+exception:
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\DependencyVersionChecker.kt:194:39: warning: 'getter for minSdkVersion: AndroidVersion' is deprecated. Will be removed in v9.0
+exception:             MinSdkVersion(it.name, it.minSdkVersion.apiLevel)
+exception:                                       ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:11:37: warning: 'ApkVariant' is deprecated. Deprecated in Java
+exception: import com.android.build.gradle.api.ApkVariant
+exception:                                     ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:628:69: warning: 'ApkVariant' is deprecated. Deprecated in Java
+exception:                     val versionCodeIfPresent: Int? = if (variant is ApkVariant) variant.versionCode else null
+exception:                                                                     ^
+Warning: Flutter support for your project's Gradle version (8.4.0) will soon be dropped. Please upgrade your Gradle version to a version of at least 8.7.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's gradle version is typically defined in the gradle wrapper file. By default, this can be found at C:\Users\2\Documents\saida_wifi_app\android/gradle/wrapper/gradle-wrapper.properties.
+For more information, see https://docs.gradle.org/current/userguide/gradle_wrapper.html.
+
+Warning: Flutter support for your project's Android Gradle Plugin version (Android Gradle Plugin version 8.3.2) will soon be dropped. Please upgrade your Android Gradle Plugin version to a version of at least Android Gradle Plugin version 8.6.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's AGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\2\Documents\saida_wifi_app\android/settings.gradle), by a plugin with the id of com.android.application.
+If you don't see a plugins block, your project was likely created with an older template version. In this case it is most likely defined in the top-level build.gradle file (C:\Users\2\Documents\saida_wifi_app\android/build.gradle) by the following line in the dependencies block of the buildscript: "classpath 'com.android.tools.build:gradle:<version>'".
+
+Warning: Flutter support for your project's Kotlin version (1.9.22) will soon be dropped. Please upgrade your Kotlin version to a version of at least 2.1.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's KGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\2\Documents\saida_wifi_app\android/settings.gradle), by a plugin with the id of org.jetbrains.kotlin.android.
+If you don't see a plugins block, your project was likely created with an older template version, in which case it is most likely defined in the top-level build.gradle file (C:\Users\2\Documents\saida_wifi_app\android/build.gradle) by the ext.kotlin_version property.
+
+Warning: The plugin shared_preferences_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Your project is configured to compile against Android SDK 34, but the following plugin(s) require to be compiled against a higher Android SDK version:
+- shared_preferences_android compiles against Android SDK 36
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\2\Documents\saida_wifi_app\android\app\build.gradle:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+lib/pages/routers_page.dart:36:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/routers_page.dart:37:31: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _routers = result['data'] ?? [];
+                              ^
+lib/pages/routers_page.dart:39:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/services_page.dart:38:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/services_page.dart:39:32: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _services = result['data'] ?? [];
+                               ^
+lib/pages/services_page.dart:40:38: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _currentService = result['current_service'];
+                                     ^
+lib/pages/services_page.dart:42:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/hierarchical_usage_page.dart:151:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:152:33: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final years = (result['years'] as List)
+                                ^
+lib/pages/hierarchical_usage_page.dart:162:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:191:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:192:34: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final months = (result['months'] as List)
+                                 ^
+lib/pages/hierarchical_usage_page.dart:202:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:226:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:227:32: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final days = (result['days'] as List)
+                               ^
+lib/pages/hierarchical_usage_page.dart:237:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:261:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:262:36: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final sessions = (result['sessions'] as List)
+                                   ^
+lib/pages/hierarchical_usage_page.dart:272:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/usage_page.dart:39:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/usage_page.dart:40:33: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _usageData = result['data'] ?? [];
+                                ^
+lib/pages/usage_page.dart:42:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/invoices_page.dart:40:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/invoices_page.dart:41:62: Error: The argument type 'List<dynamic>' can't be assigned to the parameter type 'Map<String, dynamic>'.
+ - 'List' is from 'dart:core'.
+ - 'Map' is from 'dart:core'.
+            final invoiceResponse = InvoiceResponse.fromJson(result);
+                                                             ^
+lib/pages/invoices_page.dart:45:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'] ?? '??? ?? ????? ????????';
+                            ^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\bin\flutter.bat'' finished with non-zero exit value ?
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 38s
+Running Gradle task 'assembleDebug'...                            ٢١٩٫٧s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app>

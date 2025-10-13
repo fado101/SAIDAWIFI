@@ -1,0 +1,50 @@
+
+root     26946  0.0  0.0 112816   980 pts/0    S+   15:21   0:00 grep --color=au                                                                                                             to node
+[root@vps-sqrp ~]#
+[root@vps-sqrp ~]# # فحص سجلات الأخطاء إذا لزم الأمر
+[root@vps-sqrp ~]# sudo journalctl -fu saida-wifi --lines=20
+-- Logs begin at Wed 2025-09-03 06:54:42 EDT. --
+Sep 21 15:21:04 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited                                                                                                             , code=exited, status=1/FAILURE
+Sep 21 15:21:04 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed                                                                                                              state.
+Sep 21 15:21:04 vps-sqrp.com systemd[1]: saida-wifi.service failed.
+Sep 21 15:21:09 vps-sqrp.com systemd[1]: saida-wifi.service holdoff time over, s                                                                                                             cheduling restart.
+Sep 21 15:21:09 vps-sqrp.com systemd[1]: Stopped SAIDA WiFi Manager.
+Sep 21 15:21:09 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+Sep 21 15:21:10 vps-sqrp.com node[26891]: node:internal/modules/cjs/loader:1137
+Sep 21 15:21:10 vps-sqrp.com node[26891]: throw err;
+Sep 21 15:21:10 vps-sqrp.com node[26891]: ^
+Sep 21 15:21:10 vps-sqrp.com node[26891]: Error: Cannot find module '/var/www/ht                                                                                                             ml/saida/dist/index.js'
+Sep 21 15:21:10 vps-sqrp.com node[26891]: at Module._resolveFilename (node:inter                                                                                                             nal/modules/cjs/loader:1134:15)
+Sep 21 15:21:10 vps-sqrp.com node[26891]: at Module._load (node:internal/modules                                                                                                             /cjs/loader:975:27)
+Sep 21 15:21:10 vps-sqrp.com node[26891]: at Function.executeUserEntryPoint [as                                                                                                              runMain] (node:internal/modules/run_main:128:12)
+Sep 21 15:21:10 vps-sqrp.com node[26891]: at node:internal/main/run_main_module:                                                                                                             28:49 {
+Sep 21 15:21:10 vps-sqrp.com node[26891]: code: 'MODULE_NOT_FOUND',
+Sep 21 15:21:10 vps-sqrp.com node[26891]: requireStack: []
+Sep 21 15:21:10 vps-sqrp.com node[26891]: }
+Sep 21 15:21:10 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited                                                                                                             , code=exited, status=1/FAILURE
+Sep 21 15:21:10 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed                                                                                                              state.
+Sep 21 15:21:10 vps-sqrp.com systemd[1]: saida-wifi.service failed.
+Sep 21 15:21:15 vps-sqrp.com systemd[1]: saida-wifi.service holdoff time over, s                                                                                                             cheduling restart.
+Sep 21 15:21:15 vps-sqrp.com systemd[1]: Stopped SAIDA WiFi Manager.
+Sep 21 15:21:15 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+Sep 21 15:21:15 vps-sqrp.com node[26956]: node:internal/modules/cjs/loader:1137
+Sep 21 15:21:15 vps-sqrp.com node[26956]: throw err;
+Sep 21 15:21:15 vps-sqrp.com node[26956]: ^
+Sep 21 15:21:15 vps-sqrp.com node[26956]: Error: Cannot find module '/var/www/ht                                                                                                             ml/saida/dist/index.js'
+Sep 21 15:21:15 vps-sqrp.com node[26956]: at Module._resolveFilename (node:inter                                                                                                             nal/modules/cjs/loader:1134:15)
+Sep 21 15:21:15 vps-sqrp.com node[26956]: at Module._load (node:internal/modules                                                                                                             /cjs/loader:975:27)
+Sep 21 15:21:15 vps-sqrp.com node[26956]: at Function.executeUserEntryPoint [as                                                                                                              runMain] (node:internal/modules/run_main:128:12)
+Sep 21 15:21:15 vps-sqrp.com node[26956]: at node:internal/main/run_main_module:                                                                                                             2Sep 21 15:22:07 vps-sqrp.com systemd[1]: saida-wifi.service holdoff time over, scheduling restart.
+Sep 21 15:22:07 vps-sqrp.com systemd[1]: Stopped SAIDA WiFi Manager.
+Sep 21 15:22:07 vps-sqrp.com systemd[1]: Started SAIDA WiFi Manager.
+Sep 21 15:22:07 vps-sqrp.com node[27602]: node:internal/modules/cjs/loader:1137
+Sep 21 15:22:07 vps-sqrp.com node[27602]: throw err;
+Sep 21 15:22:07 vps-sqrp.com node[27602]: ^
+Sep 21 15:22:07 vps-sqrp.com node[27602]: Error: Cannot find module '/var/www/html/saida/dist/index.js'
+Sep 21 15:22:07 vps-sqrp.com node[27602]: at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+Sep 21 15:22:07 vps-sqrp.com node[27602]: at Module._load (node:internal/modules/cjs/loader:975:27)
+Sep 21 15:22:07 vps-sqrp.com node[27602]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+Sep 21 15:22:07 vps-sqrp.com systemd[1]: saida-wifi.service: main process exited, code=exited, status=1/FAILURE
+Sep 21 15:22:07 vps-sqrp.com systemd[1]: Unit saida-wifi.service entered failed state.
+Sep 21 15:22:07 vps-sqrp.com systemd[1]: saida-wifi.service failed.
+

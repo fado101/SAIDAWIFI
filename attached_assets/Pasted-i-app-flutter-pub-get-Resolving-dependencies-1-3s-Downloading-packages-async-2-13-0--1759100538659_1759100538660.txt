@@ -1,0 +1,94 @@
+i_app> flutter pub get
+Resolving dependencies... (1.3s)
+Downloading packages...
++ async 2.13.0
++ boolean_selector 2.1.2
++ characters 1.4.0 (1.4.1 available)
++ clock 1.1.2
++ collection 1.19.1
++ cupertino_icons 1.0.8
++ fake_async 1.3.3
++ ffi 2.1.4
++ file 7.0.1
++ flutter 0.0.0 from sdk flutter
++ flutter_lints 3.0.2 (6.0.0 available)
++ flutter_localizations 0.0.0 from sdk flutter
++ flutter_riverpod 2.6.1 (3.0.0 available)
++ flutter_test 0.0.0 from sdk flutter
++ flutter_web_plugins 0.0.0 from sdk flutter
++ http 1.5.0
++ http_parser 4.1.2
++ intl 0.20.2
++ leak_tracker 11.0.2
++ leak_tracker_flutter_testing 3.0.10
++ leak_tracker_testing 3.0.2
++ lints 3.0.0 (6.0.0 available)
++ matcher 0.12.17
++ material_color_utilities 0.11.1 (0.13.0 available)
++ meta 1.16.0 (1.17.0 available)
++ path 1.9.1
++ path_provider_linux 2.2.1
++ path_provider_platform_interface 2.1.2
++ path_provider_windows 2.3.0
++ platform 3.1.6
++ plugin_platform_interface 2.1.8
++ riverpod 2.6.1 (3.0.0 available)
++ shared_preferences 2.5.3
++ shared_preferences_android 2.4.13
++ shared_preferences_foundation 2.5.4
++ shared_preferences_linux 2.4.1
++ shared_preferences_platform_interface 2.4.1
++ shared_preferences_web 2.4.3
++ shared_preferences_windows 2.4.1
++ sky_engine 0.0.0 from sdk flutter
++ source_span 1.10.1
++ stack_trace 1.12.1
++ state_notifier 1.0.0
++ stream_channel 2.1.4
++ string_scanner 1.4.1
++ term_glyph 1.2.2
++ test_api 0.7.6 (0.7.7 available)
++ typed_data 1.4.0
++ vector_math 2.2.0
++ vm_service 15.0.2
++ web 1.1.1
++ xdg_directories 1.1.0
+Changed 52 dependencies!
+8 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+Upgrading build.gradle
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not open cp_settings generic class cache for settings file 'C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android\settings.gradle' (C:\Users\2\.gradle\caches\7.6.3\scripts\4o3bwgk78pzmozextzr0d16g5).
+> BUG! exception in phase 'semantic analysis' in source unit '_BuildScript_' Unsupported class file major version 65
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 47s
+Running Gradle task 'assembleDebug'...                            ١٠٨٫٥s
+
+┌─ Flutter Fix ───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [!] Your project's Gradle version is incompatible with the Java version that Flutter is using for Gradle.           │
+│                                                                                                                     │
+│ To fix this issue, first, check the Java version used by Flutter by running `flutter doctor --verbose`.             │
+│                                                                                                                     │
+│ Then, update the Gradle version specified in                                                                        │
+│ C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.properties to │
+│ be compatible with that Java version. See the link below for more information on compatible Java/Gradle versions:   │
+│ https://docs.gradle.org/current/userguide/compatibility.html#java                                                   │
+│                                                                                                                     │
+│                                                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_4\saida_wifi_app>
+
+

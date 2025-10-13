@@ -1,0 +1,123 @@
+
+-bash: syntax error near unexpected token `('
+[root@vps-sqrp saida]# [root@vps-sqrp saida]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# # إزالة Node.js الحالي المُشكِل
+[root@vps-sqrp saida]# sudo yum remove nodejs npm -y
+Loaded plugins: fastestmirror
+No Match for argument: nodejs
+No Match for argument: npm
+No Packages marked for removal
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # تنظيف البقايا
+[root@vps-sqrp saida]# rm -rf /usr/bin/node /usr/bin/npm
+[root@vps-sqrp saida]# # تثبيت Node.js 16 الذي يدعم glibc القديم
+[root@vps-sqrp saida]# curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
+
+================================================================================
+================================================================================
+
+                              DEPRECATION WARNING
+
+     Node.js 16.x is no longer actively supported!
+
+  You will not receive security or critical stability updates for this version.
+
+  You should migrate to a supported version of Node.js as soon as possible.
+  Use the installation script that corresponds to the version of Node.js you
+  wish to install. e.g.
+
+   * https://rpm.nodesource.com/setup_16.x — Node.js 16 "Gallium" (deprecated)
+   * https://rpm.nodesource.com/setup_18.x — Node.js 18 "Hydrogen" (Maintenance)
+   * https://rpm.nodesource.com/setup_19.x — Node.js 19 "Nineteen" (deprecated)
+   * https://rpm.nodesource.com/setup_20.x — Node.js 20 LTS "Iron" (recommended)
+   * https://rpm.nodesource.com/setup_21.x — Node.js 21 "Iron" (current)
+
+
+
+  Please see https://github.com/nodejs/Release for details about which
+  version may be appropriate for you.
+
+  The NodeSource Node.js distributions repository contains
+  information both about supported versions of Node.js and supported Linux
+  distributions. To learn more about usage, see the repository:
+   https://github.com/nodesource/distributions
+
+================================================================================
+================================================================================
+
+Continuing in 10 seconds ...
+
+
+2025-09-21 15:14:10 - Cleaning up old repositories...
+2025-09-21 15:14:10 - Old repositories removed
+2025-09-21 15:14:10 - Supported architecture: x86_64
+2025-09-21 15:14:10 - yum available, updating...
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+nodesource-nodejs                                        | 2.6 kB     00:00
+Not using downloaded nodesource-nodejs/repomd.xml because it is older than what we have:
+  Current   : Wed Sep  3 15:58:58 2025
+  Downloaded: Wed Sep  6 17:26:44 2023
+Metadata Cache Created
+2025-09-21 15:14:11 - Repository is configured and updated. Run 'yum install nodejs -y' to complete the installation.
+[root@vps-sqrp saida]# sudo yum install nodejs -y
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * elrepo: mirror.rackspace.com
+ * epel: pubmirror1.math.uh.edu
+Resolving Dependencies
+--> Running transaction check
+---> Package nodejs.x86_64 2:20.19.5-1nodesource will be installed
+--> Processing Dependency: glibc >= 2.28 for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libm.so.6(GLIBC_2.27)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libstdc++.so.6(CXXABI_1.3.9)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libstdc++.so.6(GLIBCXX_3.4.20)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libstdc++.so.6(GLIBCXX_3.4.21)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Processing Dependency: libc.so.6(GLIBC_2.28)(64bit) for package: 2:nodejs-20.19.5-1nodesource.x86_64
+--> Finished Dependency Resolution
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(CXXABI_1.3.9)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(GLIBCXX_3.4.20)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libstdc++.so.6(GLIBCXX_3.4.21)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libm.so.6(GLIBC_2.27)(64bit)
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: glibc >= 2.28
+           Installed: glibc-2.17-326.el7_9.3.i686 (@updates)
+               glibc = 2.17-326.el7_9.3
+           Available: glibc-2.17-317.el7.i686 (base)
+               glibc = 2.17-317.el7
+           Available: glibc-2.17-322.el7_9.i686 (updates)
+               glibc = 2.17-322.el7_9
+           Available: glibc-2.17-323.el7_9.i686 (updates)
+               glibc = 2.17-323.el7_9
+           Available: glibc-2.17-324.el7_9.i686 (updates)
+               glibc = 2.17-324.el7_9
+           Available: glibc-2.17-325.el7_9.i686 (updates)
+               glibc = 2.17-325.el7_9
+           Available: glibc-2.17-326.el7_9.i686 (updates)
+               glibc = 2.17-326.el7_9
+Error: Package: 2:nodejs-20.19.5-1nodesource.x86_64 (nodesource-nodejs)
+           Requires: libc.so.6(GLIBC_2.28)(64bit)
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # التحقق من النسخة
+[root@vps-sqrp saida]# node --version
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+[root@vps-sqrp saida]# npm --version
+node: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.25' not found (required by node)
+node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
+node: /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by node)
+node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by node)
+[root@vps-sqrp saida]#

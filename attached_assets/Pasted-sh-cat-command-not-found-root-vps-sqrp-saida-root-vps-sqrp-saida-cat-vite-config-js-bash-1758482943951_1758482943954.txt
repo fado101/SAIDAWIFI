@@ -1,0 +1,61 @@
+sh: cat:: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]# cat vite.config.js
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# cat: vite.config.js: No such file or directory
+-bash: cat:: command not found
+[root@vps-sqrp saida]# [root@vps-sqrp saida]#
+-bash: [root@vps-sqrp: command not found
+[root@vps-sqrp saida]# # فحص ما يوجد في dist/server
+[root@vps-sqrp saida]# ls -la dist/server/
+total 164
+drwxr-xr-x 2 root root  4096 Sep 21 15:25 .
+drwxr-xr-x 3 root root  4096 Sep 21 15:25 ..
+-rw-r--r-- 1 root root  5204 Sep 21 15:25 customAuth.js
+-rw-r--r-- 1 root root 15083 Sep 21 15:25 db.js
+-rw-r--r-- 1 root root  6151 Sep 21 15:25 index.js
+-rw-r--r-- 1 root root 12171 Sep 21 15:25 radiusApi.js
+-rw-r--r-- 1 root root  9471 Sep 21 15:25 renewalService.js
+-rw-r--r-- 1 root root  5516 Sep 21 15:25 routerService.js
+-rw-r--r-- 1 root root 75762 Sep 21 15:25 routes.js
+-rw-r--r-- 1 root root  8362 Sep 21 15:25 storage.js
+-rw-r--r-- 1 root root  2505 Sep 21 15:25 vite.js
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # فحص إذا كان الملف موجود في مكان آخر
+[root@vps-sqrp saida]# find dist/ -name "*.js" -type f
+dist/server/index.js
+dist/server/renewalService.js
+dist/server/routerService.js
+dist/server/customAuth.js
+dist/server/routes.js
+dist/server/vite.js
+dist/server/storage.js
+dist/server/db.js
+dist/server/radiusApi.js
+dist/vite.config.js
+[root@vps-sqrp saida]# # تثبيت esbuild إذا لم يكن موجود
+[root@vps-sqrp saida]# npm install -g esbuild
+
+added 2 packages in 987ms
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # تشغيل أمر البناء كاملاً
+[root@vps-sqrp saida]# npm run build
+
+> rest-express@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+vite v5.4.19 building for production...
+✓ 1655 modules transformed.
+x Build failed in 5.39s
+error during build:
+[vite:asset] Could not load /var/www/html/saida/attached_assets/saida-wifi-logo-new.jpg (imported by client/src/components/logo.tsx): ENOENT: no such file or directory, open '/var/www/html/saida/attached_assets/saida-wifi-logo-new.jpg'
+Error: Could not load /var/www/html/saida/attached_assets/saida-wifi-logo-new.jpg (imported by client/src/components/logo.tsx): ENOENT: no such file or directory, open '/var/www/html/saida/attached_assets/saida-wifi-logo-new.jpg'
+[root@vps-sqrp saida]#
+[root@vps-sqrp saida]# # أو تشغيل كل جزء منفصل للتشخيص
+[root@vps-sqrp saida]# vite build
+-bash: vite: command not found
+[root@vps-sqrp saida]# esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+  dist/index.js  97.9kb
+
+⚡ Done in 21ms
+[root@vps-sqrp saida]#

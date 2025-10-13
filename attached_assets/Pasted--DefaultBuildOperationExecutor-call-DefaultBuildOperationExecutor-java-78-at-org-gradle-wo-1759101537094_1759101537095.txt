@@ -1,0 +1,412 @@
+.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:78)
+        at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+        at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+        at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:170)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:187)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:120)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:162)
+        at org.gradle.internal.Factories$1.create(Factories.java:31)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+        at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:133)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:157)
+        at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:126)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+        at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+exception: warning: ATTENTION!
+exception: this build uses unsafe internal compiler arguments:
+exception:
+exception:
+exception: this mode is not recommended for production use,
+exception: as no stability/compatibility guarantees are given on
+exception: compiler or generated code. Use it at your own risk!
+exception:
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\DependencyVersionChecker.kt:194:39: warning: 'getter for minSdkVersion: AndroidVersion' is deprecated. Will be removed in v9.0
+exception:             MinSdkVersion(it.name, it.minSdkVersion.apiLevel)
+exception:                                       ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:11:37: warning: 'ApkVariant' is deprecated. Deprecated in Java
+exception: import com.android.build.gradle.api.ApkVariant
+exception:                                     ^
+exception: c:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\packages\flutter_tools\gradle\src\main\kotlin\FlutterPlugin.kt:628:69: warning: 'ApkVariant' is deprecated. Deprecated in Java
+exception:                     val versionCodeIfPresent: Int? = if (variant is ApkVariant) variant.versionCode else null
+exception:                                                                     ^
+Warning: Flutter support for your project's Gradle version (8.4.0) will soon be dropped. Please upgrade your Gradle version to a version of at least 8.7.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's gradle version is typically defined in the gradle wrapper file. By default, this can be found at C:\Users\2\Documents\saida_wifi_app\android/gradle/wrapper/gradle-wrapper.properties.
+For more information, see https://docs.gradle.org/current/userguide/gradle_wrapper.html.
+
+Warning: Flutter support for your project's Android Gradle Plugin version (Android Gradle Plugin version 8.3.2) will soon be dropped. Please upgrade your Android Gradle Plugin version to a version of at least Android Gradle Plugin version 8.6.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's AGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\2\Documents\saida_wifi_app\android/settings.gradle), by a plugin with the id of com.android.application.
+If you don't see a plugins block, your project was likely created with an older template version. In this case it is most likely defined in the top-level build.gradle file (C:\Users\2\Documents\saida_wifi_app\android/build.gradle) by the following line in the dependencies block of the buildscript: "classpath 'com.android.tools.build:gradle:<version>'".
+
+Warning: Flutter support for your project's Kotlin version (1.9.22) will soon be dropped. Please upgrade your Kotlin version to a version of at least 2.1.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's KGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\2\Documents\saida_wifi_app\android/settings.gradle), by a plugin with the id of org.jetbrains.kotlin.android.
+If you don't see a plugins block, your project was likely created with an older template version, in which case it is most likely defined in the top-level build.gradle file (C:\Users\2\Documents\saida_wifi_app\android/build.gradle) by the ext.kotlin_version property.
+
+Warning: The plugin shared_preferences_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Your project is configured to compile against Android SDK 34, but the following plugin(s) require to be compiled against a higher Android SDK version:
+- shared_preferences_android compiles against Android SDK 36
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\2\Documents\saida_wifi_app\android\app\build.gradle:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+lib/pages/routers_page.dart:36:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/routers_page.dart:37:31: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _routers = result['data'] ?? [];
+                              ^
+lib/pages/routers_page.dart:39:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/services_page.dart:38:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/services_page.dart:39:32: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _services = result['data'] ?? [];
+                               ^
+lib/pages/services_page.dart:40:38: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _currentService = result['current_service'];
+                                     ^
+lib/pages/services_page.dart:42:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/hierarchical_usage_page.dart:151:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:152:33: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final years = (result['years'] as List)
+                                ^
+lib/pages/hierarchical_usage_page.dart:162:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:191:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:192:34: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final months = (result['months'] as List)
+                                 ^
+lib/pages/hierarchical_usage_page.dart:202:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:226:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:227:32: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final days = (result['days'] as List)
+                               ^
+lib/pages/hierarchical_usage_page.dart:237:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:261:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:262:36: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final sessions = (result['sessions'] as List)
+                                   ^
+lib/pages/hierarchical_usage_page.dart:272:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/usage_page.dart:39:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/usage_page.dart:40:33: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _usageData = result['data'] ?? [];
+                                ^
+lib/pages/usage_page.dart:42:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/invoices_page.dart:40:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/invoices_page.dart:41:62: Error: The argument type 'List<dynamic>' can't be assigned to the parameter type 'Map<String, dynamic>'.
+ - 'List' is from 'dart:core'.
+ - 'Map' is from 'dart:core'.
+            final invoiceResponse = InvoiceResponse.fromJson(result);
+                                                             ^
+lib/pages/invoices_page.dart:45:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'] ?? '??? ?? ????? ????????';
+                            ^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\bin\flutter.bat'' finished with non-zero exit value ?
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 38s
+Running Gradle task 'assembleDebug'...                            ٢١٩٫٧s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app>
+PS C:\Users\2\Documents\saida_wifi_app> xcopy /E /H /Y "C:\Users\2\Documents\saida_wifi_app" "C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\"
+C:\Users\2\Documents\saida_wifi_app\.flutter-plugins-dependencies
+C:\Users\2\Documents\saida_wifi_app\analysis_options.yaml
+C:\Users\2\Documents\saida_wifi_app\pubspec.lock
+C:\Users\2\Documents\saida_wifi_app\pubspec.yaml
+C:\Users\2\Documents\saida_wifi_app\README.md
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\package_config.json
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\package_graph.json
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\version
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\dart_plugin_registrant.dart
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\.filecache
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\app.dill
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\dart_build.d
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\dart_build.stamp
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\dart_build_result.json
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\gen_dart_plugin_registrant.stamp
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\gen_localizations.stamp
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\install_code_assets.d
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\install_code_assets.stamp
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\kernel_snapshot_program.d
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\native_assets.json
+C:\Users\2\Documents\saida_wifi_app\.dart_tool\flutter_build\e19d1c1daab9ebdbe947af15e2732f21\outputs.json
+C:\Users\2\Documents\saida_wifi_app\android\build.gradle
+C:\Users\2\Documents\saida_wifi_app\android\gradle.properties
+C:\Users\2\Documents\saida_wifi_app\android\gradlew
+C:\Users\2\Documents\saida_wifi_app\android\gradlew.bat
+C:\Users\2\Documents\saida_wifi_app\android\local.properties
+C:\Users\2\Documents\saida_wifi_app\android\settings.gradle
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.5\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.5\checksums\checksums.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.5\fileChanges\last-build.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.5\fileHashes\fileHashes.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.6.3\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.6.3\checksums\checksums.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.6.3\fileChanges\last-build.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\7.6.3\fileHashes\fileHashes.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\checksums\checksums.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\checksums\md5-checksums.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\checksums\sha1-checksums.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\dependencies-accessors\dependencies-accessors.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\dependencies-accessors\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\fileChanges\last-build.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\fileHashes\fileHashes.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.2.1\fileHashes\fileHashes.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\checksums\checksums.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\checksums\md5-checksums.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\checksums\sha1-checksums.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\dependencies-accessors\dependencies-accessors.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\dependencies-accessors\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\executionHistory\executionHistory.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\executionHistory\executionHistory.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\fileChanges\last-build.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\fileHashes\fileHashes.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\fileHashes\fileHashes.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\8.4\fileHashes\resourceHashesCache.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\buildOutputCleanup\buildOutputCleanup.lock
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\buildOutputCleanup\cache.properties
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\buildOutputCleanup\outputFiles.bin
+C:\Users\2\Documents\saida_wifi_app\android\.gradle\vcs-1\gc.properties
+C:\Users\2\Documents\saida_wifi_app\android\app\build.gradle
+C:\Users\2\Documents\saida_wifi_app\android\app\proguard-rules.pro
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\AndroidManifest.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\kotlin\com\saidawifi\app\MainActivity.kt
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\drawable\ic_launcher_foreground.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\drawable\ic_launcher_legacy.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\drawable\launch_background.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.png
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-hdpi\ic_launcher_round.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.png
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-mdpi\ic_launcher_round.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xhdpi\ic_launcher_round.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\values\colors.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\values\strings.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\values\styles.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\values-night\styles.xml
+C:\Users\2\Documents\saida_wifi_app\android\app\src\main\res\xml\network_security_config.xml
+C:\Users\2\Documents\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.jar
+C:\Users\2\Documents\saida_wifi_app\android\gradle\wrapper\gradle-wrapper.properties
+C:\Users\2\Documents\saida_wifi_app\build\app\generated\source\buildConfig\debug\com\saidawifi\app\BuildConfig.java
+C:\Users\2\Documents\saida_wifi_app\build\app\intermediates\flutter\debug\.last_build_id
+C:\Users\2\Documents\saida_wifi_app\build\e77ef6b72411bd5b641626c08d5d1741\gen_dart_plugin_registrant.stamp
+C:\Users\2\Documents\saida_wifi_app\build\e77ef6b72411bd5b641626c08d5d1741\gen_localizations.stamp
+C:\Users\2\Documents\saida_wifi_app\build\e77ef6b72411bd5b641626c08d5d1741\_composite.stamp
+C:\Users\2\Documents\saida_wifi_app\lib\main.dart
+C:\Users\2\Documents\saida_wifi_app\lib\api\api_service.dart
+C:\Users\2\Documents\saida_wifi_app\lib\models\invoice.dart
+C:\Users\2\Documents\saida_wifi_app\lib\models\invoice_response.dart
+C:\Users\2\Documents\saida_wifi_app\lib\models\usage_models.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\connection_test_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\dashboard_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\hierarchical_Fusage.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\hierarchical_usage_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\invoices_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\login_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\routers_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\services_page.dart
+C:\Users\2\Documents\saida_wifi_app\lib\pages\usage_page.dart
+C:\Users\2\Documents\saida_wifi_app\test\dashboard_test.dart
+C:\Users\2\Documents\saida_wifi_app\test\invoices_test.dart
+C:\Users\2\Documents\saida_wifi_app\test\login_test.dart
+C:\Users\2\Documents\saida_wifi_app\test\widget_test.dart
+115 File(s) copied
+PS C:\Users\2\Documents\saida_wifi_app> cd "C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING"
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING> flutter run
+Launching lib\main.dart on SM G988B in debug mode...
+Warning: Flutter support for your project's Gradle version (8.4.0) will soon be dropped. Please upgrade your Gradle version to a version of at least 8.7.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's gradle version is typically defined in the gradle wrapper file. By default, this can be found at C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\android/gradle/wrapper/gradle-wrapper.properties.
+For more information, see https://docs.gradle.org/current/userguide/gradle_wrapper.html.
+
+Warning: Flutter support for your project's Android Gradle Plugin version (Android Gradle Plugin version 8.3.2) will soon be dropped. Please upgrade your Android Gradle Plugin version to a version of at least Android Gradle Plugin version 8.6.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's AGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\android/settings.gradle), by a plugin with the id of com.android.application.
+If you don't see a plugins block, your project was likely created with an older template version. In this case it is most likely defined in the top-level build.gradle file (C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\android/build.gradle) by the following line in the dependencies block of the buildscript: "classpath 'com.android.tools.build:gradle:<version>'".
+
+Warning: Flutter support for your project's Kotlin version (1.9.22) will soon be dropped. Please upgrade your Kotlin version to a version of at least 2.1.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's KGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\android/settings.gradle), by a plugin with the id of org.jetbrains.kotlin.android.
+If you don't see a plugins block, your project was likely created with an older template version, in which case it is most likely defined in the top-level build.gradle file (C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\android/build.gradle) by the ext.kotlin_version property.
+
+Warning: The plugin shared_preferences_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Your project is configured to compile against Android SDK 34, but the following plugin(s) require to be compiled against a higher Android SDK version:
+- shared_preferences_android compiles against Android SDK 36
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING\android\app\build.gradle:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+lib/pages/invoices_page.dart:40:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/invoices_page.dart:41:62: Error: The argument type 'List<dynamic>' can't be assigned to the parameter type 'Map<String, dynamic>'.
+ - 'List' is from 'dart:core'.
+ - 'Map' is from 'dart:core'.
+            final invoiceResponse = InvoiceResponse.fromJson(result);
+                                                             ^
+lib/pages/invoices_page.dart:45:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'] ?? '??? ?? ????? ????????';
+                            ^
+lib/pages/usage_page.dart:39:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/usage_page.dart:40:33: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _usageData = result['data'] ?? [];
+                                ^
+lib/pages/usage_page.dart:42:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/hierarchical_usage_page.dart:151:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:152:33: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final years = (result['years'] as List)
+                                ^
+lib/pages/hierarchical_usage_page.dart:162:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:191:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:192:34: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final months = (result['months'] as List)
+                                 ^
+lib/pages/hierarchical_usage_page.dart:202:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:226:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:227:32: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final days = (result['days'] as List)
+                               ^
+lib/pages/hierarchical_usage_page.dart:237:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/hierarchical_usage_page.dart:261:20: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+        if (result['success'] == true) {
+                   ^
+lib/pages/hierarchical_usage_page.dart:262:36: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          final sessions = (result['sessions'] as List)
+                                   ^
+lib/pages/hierarchical_usage_page.dart:272:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message'];
+                            ^
+lib/pages/services_page.dart:38:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/services_page.dart:39:32: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _services = result['data'] ?? [];
+                               ^
+lib/pages/services_page.dart:40:38: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _currentService = result['current_service'];
+                                     ^
+lib/pages/services_page.dart:42:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+lib/pages/routers_page.dart:36:22: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+          if (result['success'].toString() == 'true') {
+                     ^
+lib/pages/routers_page.dart:37:31: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _routers = result['data'] ?? [];
+                              ^
+lib/pages/routers_page.dart:39:29: Error: A value of type 'String' can't be assigned to a variable of type 'int'.
+            _error = result['message']?.toString() ?? '??? ??? ??';
+                            ^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\Users\2\Downloads\flutter_windows_3.35.3-stable\flutter\bin\flutter.bat'' finished with non-zero exit value ?
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10s
+Running Gradle task 'assembleDebug'...                             ١٢٫١s
+Error: Gradle task assembleDebug failed with exit code 1
+PS C:\Users\2\Downloads\Compressed\saida_wifi_app_WORKING>

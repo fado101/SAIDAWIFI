@@ -1,0 +1,119 @@
+مرحبًا، عندي مشكلتين رئيسيتين:
+
+النشر (Publishing) يفشل بسبب Deployment timed out.
+
+أخطاء كثيرة في TypeScript وقت npx tsc.
+
+أريدك تنفذ التعديلات التالية على الملفات:
+
+🔧 تعديلات النشر (Publishing Fix)
+
+server/index.ts
+
+غيّر server.listen ليكون:
+
+const PORT = process.env.PORT || 3000;
+server.listen(Number(PORT), "0.0.0.0", () => {
+  console.log(`✅ Server running on port ${PORT}`);
+});
+
+
+حتى Replit يكتشف السيرفر ويكمل النشر.
+
+🔧 تعديلات server/storage.ts (مشاكل TS2322)
+
+شيل ?? null من النصوص الجاهزة (زي "...باقة..." ?? null).
+
+عيّن قيم افتراضية بدل undefined:
+
+email: userData.email ?? null,
+firstName: userData.firstName ?? null,
+lastName: userData.lastName ?? null,
+username: userData.username ?? null,
+profileImageUrl: userData.profileImageUrl ?? null,
+activationDate: subData.activationDate ?? null,
+sessionEnd: recordData.sessionEnd ?? null,
+status: invoiceData.status ?? "unpaid",
+description: invoiceData.description ?? null,
+status: ticketData.status ?? "open",
+priority: ticketData.priority ?? null,
+userId: replyData.userId ?? null,
+isManagerReply: replyData.isManagerReply ?? null,
+approvedBy: requestData.approvedBy ?? null,
+approvedDate: requestData.approvedDate ?? null,
+
+
+الهدف: أي حقل يقبل فقط string | null أو Date | null → ما نتركه undefined.
+
+🔧 تعديلات الواجهة (React)
+
+client/src/components/ui/sidebar.tsx
+
+أصلح الاستيراد:
+
+import { useIsMobile } from "../hooks/use-mobile";
+
+
+وإذا الملف use-mobile.ts غير موجود، أنشئ:
+
+import { useEffect, useState } from "react";
+export function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return isMobile;
+}
+
+
+client/src/pages/support.tsx
+
+عرّف type للـ userProfile:
+
+interface UserProfile {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+}
+const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
+
+
+client/src/pages/usage-reports-new.tsx
+
+عرّف type للـ last30Days و yearlyData:
+
+interface UsageReport {
+  download_gb?: number;
+  upload_gb?: number;
+  total_gb?: number;
+}
+interface YearData {
+  year: number;
+  total: number;
+}
+const [last30Days, setLast30Days] = useState<UsageReport | null>(null);
+const [yearlyData, setYearlyData] = useState<YearData[]>([]);
+
+
+client/src/services/authFixService.ts
+
+أصلح catch:
+
+} catch (error: unknown) {
+  console.log("ℹ️ خطأ شبكة في التحقق من المصادقة:", (error as any).message);
+}
+
+✅ النتيجة المتوقعة
+
+يختفي خطأ Deployment timed out عند النشر.
+
+يختفي كل أخطاء TS2322, TS2339, TS18046.
+
+السيرفر يشتغل على المنفذ الصحيح في Replit.
+
+React client يشتغل بدون أخطاء types.
+
+📌 رجاءً طبّق هذه التعديلات كلها في الملفات المذكورة.

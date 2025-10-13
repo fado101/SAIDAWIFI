@@ -1,0 +1,42 @@
+
+[root@vps-sqrp ~]# cd /var/www/html
+[root@vps-sqrp html]# ls -la saida-wifi-manager-final-syria.tar_2.gz
+-rw-r--r-- 1 root root 633992 Sep 21 14:43 saida-wifi-manager-final-syria.tar_2.gz
+[root@vps-sqrp html]# tar -tzf saida-wifi-manager-final-syria.tar_2.gz | head -20
+./
+./client/
+./client/src/
+./client/src/components/
+./client/src/components/ui/
+./client/src/components/ui/aspect-ratio.tsx
+./client/src/components/ui/alert-dialog.tsx
+./client/src/components/ui/pagination.tsx
+./client/src/components/ui/tabs.tsx
+./client/src/components/ui/card.tsx
+./client/src/components/ui/slider.tsx
+./client/src/components/ui/popover.tsx
+./client/src/components/ui/progress.tsx
+./client/src/components/ui/toaster.tsx
+./client/src/components/ui/input-otp.tsx
+./client/src/components/ui/hover-card.tsx
+./client/src/components/ui/sheet.tsx
+./client/src/components/ui/scroll-area.tsx
+./client/src/components/ui/resizable.tsx
+./client/src/components/ui/label.tsx
+[root@vps-sqrp html]# sudo mv /var/www/html /var/www/html.backup.$(date +%Y%m%d_%H%M%S)
+[root@vps-sqrp html]# sudo mkdir -p /var/www/html
+[root@vps-sqrp html]# sudo tar --no-same-owner --no-same-permissions -xzf saida-wifi-manager-final-syria.tar_2.gz -C /var/www/html/
+[root@vps-sqrp html]# sudo chown -R www-data:www-data /var/www/html/
+chown: invalid user: ‘www-data:www-data’
+[root@vps-sqrp html]# sudo find /var/www/html/ -type d -exec chmod 755 {} \;
+[root@vps-sqrp html]# sudo find /var/www/html/ -type f -exec chmod 644 {} \;
+[root@vps-sqrp html]# sudo find /var/www/html/ -name "*.php" -exec chmod 644 {} \;
+[root@vps-sqrp html]#
+[root@vps-sqrp html]# sudo find /var/www/html/ -name "*.sh" -exec chmod +x {} \;
+[root@vps-sqrp html]# sudo a2enmod rewrite
+sudo: a2enmod: command not found
+[root@vps-sqrp html]# sudo systemctl restart apache2
+Failed to restart apache2.service: Unit not found.
+[root@vps-sqrp html]# sudo systemctl status apache2
+Unit apache2.service could not be found.
+[root@vps-sqrp html]#
