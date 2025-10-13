@@ -11,3 +11,11 @@ node_modules/
 dist/
 build/
 .env
+backup.zip
+*.zip
+*.rar
+*.7z
+node_modules/
+dist/
+build/
+.env
